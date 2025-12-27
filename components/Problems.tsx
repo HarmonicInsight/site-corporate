@@ -28,28 +28,44 @@ export default function Problems() {
 
   const problems = [
     {
-      text: "DXツールを導入したが、現場でまったく使われていない",
-      detail: "ツール選定は正しかったはずなのに、定着しない",
+      icon: (
+        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+      ),
+      text: "月次実績が毎回「怪しい」。管理部門が手作業で照合している",
     },
     {
-      text: "業務整理が曖昧なまま、システム化を進めて失敗した",
-      detail: "要件定義の段階で「何を実現したいか」が共有されていなかった",
+      icon: (
+        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+        </svg>
+      ),
+      text: "入力ミスが月末に発覚し、差し戻し→修正→再確認の連鎖で締めが遅れる",
     },
     {
-      text: "コンサル・SI・現場の言葉が噛み合わず、議論が空転する",
-      detail: "抽象的な構想と、具体的な業務の間に橋がかからない",
+      icon: (
+        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+        </svg>
+      ),
+      text: "現場・営業が「とりあえず登録」して、後から経理に怒られる",
     },
     {
-      text: "資料や構想は立派だが、実装フェーズで止まる",
-      detail: "絵を描く人と、作る人と、使う人が分断されている",
+      icon: (
+        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+        </svg>
+      ),
+      text: "管理部門が「検査員」になっていて、本来の業務に手が回らない",
     },
     {
-      text: "ダッシュボードを作ったが、見る人がいない",
-      detail: "データは出せても、判断や行動に繋がっていない",
-    },
-    {
-      text: "属人化した業務を標準化したいが、どこから手をつけていいか分からない",
-      detail: "現状把握すらできていないまま、改善の議論が始まっている",
+      icon: (
+        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+        </svg>
+      ),
+      text: "原価率・進捗・契約金額の整合がとれず、報告のたびに数字が揺れる",
     },
   ];
 
@@ -59,16 +75,13 @@ export default function Problems() {
       ref={sectionRef}
       className="py-20 sm:py-28 px-4 sm:px-6 bg-white dark:bg-gray-950"
     >
-      <div className="max-w-4xl mx-auto">
-        <div className="fade-in-section text-center mb-12 sm:mb-16">
-          <p className="text-sm font-medium text-primary-600 dark:text-primary-400 uppercase tracking-wider mb-3">
-            Problems
-          </p>
+      <div className="max-w-3xl mx-auto">
+        <div className="fade-in-section text-center mb-12">
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white mb-4">
-            こんな課題、ありませんか？
+            こんな状況、ありませんか？
           </h2>
-          <p className="text-gray-600 dark:text-gray-400 text-base max-w-2xl mx-auto">
-            DX・業務改善・IT導入で「うまくいかなかった経験」を持つ方へ
+          <p className="text-gray-600 dark:text-gray-400">
+            建設業の管理部門・経理でよく聞く「月次の悩み」
           </p>
         </div>
 
@@ -76,45 +89,25 @@ export default function Problems() {
           {problems.map((problem, index) => (
             <div
               key={index}
-              className="fade-in-section bg-gray-50 dark:bg-gray-900 rounded-xl p-5 sm:p-6 border-l-4 border-primary-500"
+              className="fade-in-section flex items-start gap-4 bg-gray-50 dark:bg-gray-900 rounded-xl p-5 border-l-4 border-amber-500"
             >
-              <p className="text-gray-900 dark:text-white font-medium mb-1">
+              <div className="flex-shrink-0 text-amber-600 dark:text-amber-400 mt-0.5">
+                {problem.icon}
+              </div>
+              <p className="text-gray-800 dark:text-gray-200 text-sm sm:text-base leading-relaxed">
                 {problem.text}
-              </p>
-              <p className="text-gray-500 dark:text-gray-400 text-sm">
-                {problem.detail}
               </p>
             </div>
           ))}
         </div>
 
-        <div className="fade-in-section text-center mt-12">
-          <p className="text-gray-600 dark:text-gray-400 mb-4">
-            これらの問題の根本原因は、
-            <span className="text-gray-900 dark:text-white font-medium">
-              「業務」と「システム」の設計がズレていること
-            </span>
-            です。
+        <div className="fade-in-section mt-12 text-center">
+          <p className="text-gray-600 dark:text-gray-400 mb-2">
+            これらの問題に共通する原因は——
           </p>
-          <a
-            href="#solutions"
-            className="inline-flex items-center text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 font-medium transition-colors"
-          >
-            解決策を見る
-            <svg
-              className="w-4 h-4 ml-1"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M19 9l-7 7-7-7"
-              />
-            </svg>
-          </a>
+          <p className="text-lg font-medium text-gray-900 dark:text-white">
+            「チェックを後工程に回している」こと。
+          </p>
         </div>
       </div>
     </section>
