@@ -44,11 +44,16 @@ export default function About() {
         </div>
 
         <div className="fade-in-section bg-gray-50 dark:bg-gray-900 rounded-2xl p-8 sm:p-12">
-          <p className="text-gray-600 dark:text-gray-400 text-center mb-10 text-base sm:text-lg leading-relaxed">
-            私たちは、創作・ツール開発・コンテンツ発信を通じて、
-            <br className="hidden sm:block" />
-            新しい価値を生み出し続けています。
-          </p>
+          <div className="text-center mb-10 space-y-3">
+            <p className="text-gray-900 dark:text-white text-lg sm:text-xl font-medium leading-relaxed">
+              設計し、運用を回し、判断を速くする。
+            </p>
+            <p className="text-gray-600 dark:text-gray-400 text-base sm:text-lg leading-relaxed">
+              データの流れと人の動きを整えることで、
+              <br className="hidden sm:block" />
+              仕組みが定着し、成果につながる。
+            </p>
+          </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8">
             {companyInfo.map((info) => (

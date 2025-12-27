@@ -4,75 +4,51 @@ import { useEffect, useRef } from "react";
 
 interface ServiceCardProps {
   title: string;
-  description: string;
-  link: string;
-  linkText: string;
+  problem: string;
+  value: string;
+  outcome: string;
   icon: React.ReactNode;
-  isComingSoon?: boolean;
 }
 
-function ServiceCard({
-  title,
-  description,
-  link,
-  linkText,
-  icon,
-  isComingSoon,
-}: ServiceCardProps) {
+function ServiceCard({ title, problem, value, outcome, icon }: ServiceCardProps) {
   return (
     <div className="fade-in-section bg-white dark:bg-gray-900 rounded-2xl p-6 sm:p-8 shadow-sm hover:shadow-md dark:shadow-gray-900/50 transition-all duration-300 border border-gray-100 dark:border-gray-800 flex flex-col h-full">
       <div className="w-12 h-12 rounded-xl bg-primary-100 dark:bg-primary-900/30 flex items-center justify-center text-primary-600 dark:text-primary-400 mb-5">
         {icon}
       </div>
 
-      <h3 className="text-lg sm:text-xl font-semibold text-gray-900 dark:text-white mb-3">
+      <h3 className="text-lg sm:text-xl font-semibold text-gray-900 dark:text-white mb-4">
         {title}
       </h3>
 
-      <p className="text-gray-600 dark:text-gray-400 text-sm sm:text-base leading-relaxed mb-6 flex-grow">
-        {description}
-      </p>
+      <div className="space-y-4 flex-grow">
+        <div>
+          <p className="text-xs font-medium text-gray-500 dark:text-gray-500 uppercase tracking-wider mb-1">
+            課題
+          </p>
+          <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
+            {problem}
+          </p>
+        </div>
 
-      {isComingSoon ? (
-        <span className="inline-flex items-center text-sm text-gray-400 dark:text-gray-500">
-          <svg
-            className="w-4 h-4 mr-1.5"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-            />
-          </svg>
-          {linkText}
-        </span>
-      ) : (
-        <a
-          href={link}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center text-sm text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 font-medium transition-colors duration-200"
-        >
-          {linkText}
-          <svg
-            className="w-4 h-4 ml-1.5"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-            />
-          </svg>
-        </a>
-      )}
+        <div>
+          <p className="text-xs font-medium text-gray-500 dark:text-gray-500 uppercase tracking-wider mb-1">
+            提供価値
+          </p>
+          <p className="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">
+            {value}
+          </p>
+        </div>
+
+        <div>
+          <p className="text-xs font-medium text-gray-500 dark:text-gray-500 uppercase tracking-wider mb-1">
+            期待成果
+          </p>
+          <p className="text-primary-700 dark:text-primary-400 text-sm font-medium leading-relaxed">
+            {outcome}
+          </p>
+        </div>
+      </div>
     </div>
   );
 }
@@ -101,13 +77,14 @@ export default function Services() {
     return () => observer.disconnect();
   }, []);
 
-  const services = [
+  const services: ServiceCardProps[] = [
     {
-      title: "Harmonic Novels",
-      description:
-        "AIと人間の共創で生まれる小説・書籍シリーズ。Kindleで30冊以上発売中。",
-      link: "https://www.amazon.co.jp/",
-      linkText: "Amazon で見る",
+      title: "業務プロセス設計",
+      problem:
+        "ダッシュボードを作ったのに、誰も見ない。データはあるのに、判断が変わらない。",
+      value:
+        "データソースから意思決定フロー、アクションまでを一貫して設計。建設・業務管理に強い。",
+      outcome: "判断が速くなる。作業が減る。仕組みが回る。",
       icon: (
         <svg
           className="w-6 h-6"
@@ -119,17 +96,18 @@ export default function Services() {
             strokeLinecap="round"
             strokeLinejoin="round"
             strokeWidth={1.5}
-            d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
+            d="M9 17V7m0 10a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h2a2 2 0 012 2m0 10a2 2 0 002 2h2a2 2 0 002-2M9 7a2 2 0 012-2h2a2 2 0 012 2m0 10V7m0 10a2 2 0 002 2h2a2 2 0 002-2V7a2 2 0 00-2-2h-2a2 2 0 00-2 2"
           />
         </svg>
       ),
     },
     {
-      title: "Insight Series",
-      description:
-        "プロフェッショナル向け生産性ツール。PowerPoint自動生成、Python開発支援など、思考の整理と自動化を支援。",
-      link: "https://h-insight.jp/",
-      linkText: "詳しく見る",
+      title: "プロトタイプ開発",
+      problem:
+        "要件が固まらない。動くものを見ないと、議論が進まない。",
+      value:
+        "最速でプロトタイプを構築し、合意形成を加速。全体設計から実装まで一人で完結。",
+      outcome: "手戻りが減る。意思決定が前倒しになる。",
       icon: (
         <svg
           className="w-6 h-6"
@@ -141,18 +119,18 @@ export default function Services() {
             strokeLinecap="round"
             strokeLinejoin="round"
             strokeWidth={1.5}
-            d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+            d="M13 10V3L4 14h7v7l9-11h-7z"
           />
         </svg>
       ),
     },
     {
-      title: "Harmonic Life",
-      description:
-        "日常をより良くするライフスタイルアプリ。健康管理、習慣化をサポート。",
-      link: "#",
-      linkText: "準備中",
-      isComingSoon: true,
+      title: "運用定着支援",
+      problem:
+        "導入したツールが使われない。現場に定着しない。負荷だけが残る。",
+      value:
+        "更新運用・教育・定着までを設計し、伴走。仕組みを人に馴染ませる。",
+      outcome: "負荷が下がる。継続する。再現性が生まれる。",
       icon: (
         <svg
           className="w-6 h-6"
@@ -164,7 +142,7 @@ export default function Services() {
             strokeLinecap="round"
             strokeLinejoin="round"
             strokeWidth={1.5}
-            d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+            d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"
           />
         </svg>
       ),
@@ -182,13 +160,40 @@ export default function Services() {
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
             Services
           </h2>
-          <div className="w-12 h-1 bg-primary-500 mx-auto rounded-full" />
+          <div className="w-12 h-1 bg-primary-500 mx-auto rounded-full mb-6" />
+          <p className="text-gray-600 dark:text-gray-400 text-base sm:text-lg max-w-2xl mx-auto">
+            UIは作れて当たり前の時代。
+            <br className="sm:hidden" />
+            差がつくのは、運用・データ・判断の設計。
+          </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 mb-12">
           {services.map((service) => (
             <ServiceCard key={service.title} {...service} />
           ))}
+        </div>
+
+        <div className="fade-in-section text-center">
+          <a
+            href="#contact"
+            className="inline-flex items-center text-sm text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 font-medium transition-colors duration-200"
+          >
+            ご相談はこちら
+            <svg
+              className="w-4 h-4 ml-1.5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </a>
         </div>
       </div>
     </section>
