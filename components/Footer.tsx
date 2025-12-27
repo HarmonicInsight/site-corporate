@@ -9,6 +9,12 @@ export default function Footer() {
 
           <nav className="flex items-center space-x-6">
             <a
+              href="/company"
+              className="text-sm text-gray-500 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors duration-200"
+            >
+              会社概要
+            </a>
+            <a
               href="/privacy"
               className="text-sm text-gray-500 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors duration-200"
             >
