@@ -1,9 +1,10 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
-import About from "@/components/About";
+import Problems from "@/components/Problems";
+import Solutions from "@/components/Solutions";
+import TrackRecord from "@/components/TrackRecord";
 import Services from "@/components/Services";
-import HowWeWork from "@/components/HowWeWork";
-import Beliefs from "@/components/Beliefs";
+import Philosophy from "@/components/Philosophy";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 
@@ -13,10 +14,11 @@ export default function Home() {
       <Header />
       <main>
         <Hero />
-        <About />
+        <Problems />
+        <Solutions />
+        <TrackRecord />
         <Services />
-        <HowWeWork />
-        <Beliefs />
+        <Philosophy />
         <Contact />
       </main>
       <Footer />
