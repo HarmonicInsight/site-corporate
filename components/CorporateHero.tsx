@@ -33,18 +33,13 @@ export default function CorporateHero() {
 
       {/* Content */}
       <div className="relative z-10 text-center max-w-3xl mx-auto">
-        <h1 className="fade-in-section text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-8 leading-tight">
+        <h1 className="fade-in-section text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6 leading-tight">
           業務を、誰でも回る形に。
         </h1>
 
-        <div className="fade-in-section space-y-3 text-base sm:text-lg text-gray-600 dark:text-gray-400 leading-relaxed">
-          <p>
-            業務を部品として定義し、組み立てて、誰でも回る形にする。
-          </p>
-          <p className="text-gray-500 dark:text-gray-500 text-sm">
-            属人性を仕組みで解消し、現場に負担をかけない設計を支援します。
-          </p>
-        </div>
+        <p className="fade-in-section text-base sm:text-lg text-gray-600 dark:text-gray-400">
+          部品化して、組み立てて、仕組みで回す。
+        </p>
       </div>
     </section>
   );

@@ -26,40 +26,22 @@ export default function Principles() {
     return () => observer.disconnect();
   }, []);
 
-  const principles = [
-    {
-      title: "構造で捉える",
-      description: "問題を分解し、関係性を可視化する",
-    },
-    {
-      title: "再現可能にする",
-      description: "属人化を避け、仕組みとして定着させる",
-    },
-    {
-      title: "現場に負担をかけない",
-      description: "使う人の視点で、無理のない形に落とし込む",
-    },
-  ];
+  const principles = ["構造で捉える", "再現可能にする", "現場に負担をかけない"];
 
   return (
     <section
       ref={sectionRef}
-      className="pt-10 pb-12 sm:py-16 md:py-20 px-4 sm:px-6 bg-white dark:bg-gray-950"
+      className="pt-8 pb-10 sm:py-12 md:py-16 px-4 sm:px-6 bg-white dark:bg-gray-950"
     >
-      <div className="max-w-4xl mx-auto">
-        <div className="grid md:grid-cols-3 gap-8">
+      <div className="max-w-3xl mx-auto">
+        <div className="flex flex-wrap justify-center gap-4 sm:gap-8">
           {principles.map((principle, index) => (
-            <div
+            <span
               key={index}
-              className="fade-in-section text-center"
+              className="fade-in-section text-sm sm:text-base font-medium text-gray-700 dark:text-gray-300"
             >
-              <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
-                {principle.title}
-              </h3>
-              <p className="text-sm text-gray-600 dark:text-gray-400">
-                {principle.description}
-              </p>
-            </div>
+              {principle}
+            </span>
           ))}
         </div>
       </div>
