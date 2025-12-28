@@ -297,6 +297,26 @@ export default function CompanyPage() {
           </div>
         </section>
 
+        {/* Chief Architect */}
+        <section className="py-12 px-4 sm:px-6 bg-gray-50 dark:bg-gray-900/50">
+          <div className="max-w-3xl mx-auto">
+            <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 items-start">
+              <div className="flex-grow">
+                <p className="text-xs text-gray-500 dark:text-gray-400 uppercase tracking-wider mb-1">
+                  Chief Architect / Strategist
+                </p>
+                <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
+                  Erik Arthur
+                </h3>
+                <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
+                  事業設計・建設DXフレームワーク・Insightシリーズの設計思想を統括。<br />
+                  業務の構造化と仕組み化を通じて、再現可能な業務設計を推進しています。
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* CTA */}
         <section className="py-20 px-4 sm:px-6">
           <div className="max-w-3xl mx-auto text-center">

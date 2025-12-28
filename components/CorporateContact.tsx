@@ -120,7 +120,10 @@ export default function CorporateContact() {
             </button>
           </form>
 
-          <div className="mt-6 text-center">
+          <div className="mt-6 text-center space-y-2">
+            <p className="text-xs text-gray-600 dark:text-gray-300">
+              担当: Erik Arthur（Chief Architect / Strategist）
+            </p>
             <p className="text-xs text-gray-500 dark:text-gray-400">
               ※ 営業目的のご連絡には返信いたしかねます
             </p>
