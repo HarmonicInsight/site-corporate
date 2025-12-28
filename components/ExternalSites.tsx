@@ -38,6 +38,11 @@ export default function ExternalSites() {
       url: "https://insight-series-site.vercel.app/",
     },
     {
+      title: "TokoBi",
+      description: "BIダッシュボード構築サービス。",
+      url: "https://insight-bi-ruby.vercel.app/",
+    },
+    {
       title: "Apps Portal",
       description: "アプリ・ツールの一覧とデモ入口。",
       url: "https://h-insight-apps-portal.vercel.app/",
