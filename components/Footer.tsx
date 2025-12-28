@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Footer() {
   return (
     <footer className="py-8 sm:py-12 px-4 sm:px-6 bg-gray-50 dark:bg-gray-900/50 border-t border-gray-100 dark:border-gray-800">
@@ -8,18 +10,24 @@ export default function Footer() {
           </p>
 
           <nav className="flex items-center space-x-6">
-            <a
+            <Link
+              href="/services"
+              className="text-sm text-gray-500 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors duration-200"
+            >
+              Services
+            </Link>
+            <Link
               href="/company"
               className="text-sm text-gray-500 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors duration-200"
             >
-              会社概要
-            </a>
-            <a
+              Company
+            </Link>
+            <Link
               href="/privacy"
               className="text-sm text-gray-500 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors duration-200"
             >
-              Privacy Policy
-            </a>
+              Privacy
+            </Link>
           </nav>
         </div>
       </div>
