@@ -111,64 +111,6 @@ export default function CompanyPage() {
           </div>
         </section>
 
-        {/* 基本情報 */}
-        <section className="py-16 px-4 sm:px-6">
-          <div className="max-w-3xl mx-auto">
-            <h2 className="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white mb-8 pb-4 border-b border-gray-200 dark:border-gray-700">
-              基本情報
-            </h2>
-            <dl className="space-y-6">
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
-                <dt className="text-gray-500 dark:text-gray-400 font-medium">会社名</dt>
-                <dd className="md:col-span-2 text-gray-900 dark:text-white">
-                  ハーモニックインサイト合同会社
-                  <span className="block text-sm text-gray-500 dark:text-gray-400 mt-1">
-                    Harmonic Insight LLC
-                  </span>
-                </dd>
-              </div>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
-                <dt className="text-gray-500 dark:text-gray-400 font-medium">設立</dt>
-                <dd className="md:col-span-2 text-gray-900 dark:text-white">2025年8月15日</dd>
-              </div>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
-                <dt className="text-gray-500 dark:text-gray-400 font-medium">代表</dt>
-                <dd className="md:col-span-2 text-gray-900 dark:text-white">瀬田ルリ子</dd>
-              </div>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
-                <dt className="text-gray-500 dark:text-gray-400 font-medium">所在地</dt>
-                <dd className="md:col-span-2 text-gray-900 dark:text-white">
-                  〒104-0061<br />
-                  東京都中央区銀座1丁目12番4号<br />
-                  N&E BLD. 6F
-                </dd>
-              </div>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
-                <dt className="text-gray-500 dark:text-gray-400 font-medium">連絡先</dt>
-                <dd className="md:col-span-2">
-                  <a
-                    href="mailto:info@h-insight.jp"
-                    className="text-primary-600 dark:text-primary-400 hover:underline"
-                  >
-                    info@h-insight.jp
-                  </a>
-                </dd>
-              </div>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
-                <dt className="text-gray-500 dark:text-gray-400 font-medium">事業内容</dt>
-                <dd className="md:col-span-2 text-gray-900 dark:text-white">
-                  <ul className="space-y-1">
-                    <li>・業務コンサルティング（建設業DX支援）</li>
-                    <li>・ソフトウェア開発・販売</li>
-                    <li>・モバイルアプリケーション開発</li>
-                    <li>・コンテンツ制作・出版</li>
-                  </ul>
-                </dd>
-              </div>
-            </dl>
-          </div>
-        </section>
-
         {/* 事業領域 */}
         <section className="py-16 px-4 sm:px-6 bg-gray-50 dark:bg-gray-900/50">
           <div className="max-w-5xl mx-auto">
@@ -312,6 +254,65 @@ export default function CompanyPage() {
                   </div>
                 </div>
               ))}
+            </div>
+          </div>
+        </section>
+
+        {/* 基本情報 */}
+        <section className="py-16 px-4 sm:px-6">
+          <div className="max-w-3xl mx-auto">
+            <h2 className="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white mb-8 pb-4 border-b border-gray-200 dark:border-gray-700">
+              基本情報
+            </h2>
+            <div className="space-y-4">
+              <div className="flex flex-col sm:flex-row gap-2 sm:gap-4">
+                <div className="w-32 flex-shrink-0 text-gray-500 dark:text-gray-400 font-medium text-sm">
+                  会社名
+                </div>
+                <div className="text-gray-900 dark:text-white text-sm">
+                  ハーモニックインサイト合同会社（Harmonic Insight LLC）
+                </div>
+              </div>
+              <div className="flex flex-col sm:flex-row gap-2 sm:gap-4">
+                <div className="w-32 flex-shrink-0 text-gray-500 dark:text-gray-400 font-medium text-sm">
+                  設立
+                </div>
+                <div className="text-gray-900 dark:text-white text-sm">
+                  2025年8月
+                </div>
+              </div>
+              <div className="flex flex-col sm:flex-row gap-2 sm:gap-4">
+                <div className="w-32 flex-shrink-0 text-gray-500 dark:text-gray-400 font-medium text-sm">
+                  代表
+                </div>
+                <div className="text-gray-900 dark:text-white text-sm">
+                  瀬田 ルリ子
+                </div>
+              </div>
+              <div className="flex flex-col sm:flex-row gap-2 sm:gap-4">
+                <div className="w-32 flex-shrink-0 text-gray-500 dark:text-gray-400 font-medium text-sm">
+                  所在地
+                </div>
+                <div className="text-gray-900 dark:text-white text-sm">
+                  東京都
+                </div>
+              </div>
+              <div className="flex flex-col sm:flex-row gap-2 sm:gap-4">
+                <div className="w-32 flex-shrink-0 text-gray-500 dark:text-gray-400 font-medium text-sm">
+                  連絡先
+                </div>
+                <div className="text-gray-900 dark:text-white text-sm">
+                  info@h-insight.jp
+                </div>
+              </div>
+              <div className="flex flex-col sm:flex-row gap-2 sm:gap-4">
+                <div className="w-32 flex-shrink-0 text-gray-500 dark:text-gray-400 font-medium text-sm">
+                  事業内容
+                </div>
+                <div className="text-gray-900 dark:text-white text-sm">
+                  建設業DX支援 / ソフトウェア開発 / コンテンツ制作
+                </div>
+              </div>
             </div>
           </div>
         </section>
