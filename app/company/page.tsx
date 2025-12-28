@@ -158,9 +158,16 @@ export default function CompanyPage() {
               創業の背景
             </h2>
             <div className="space-y-8 text-gray-700 dark:text-gray-300 leading-relaxed">
-              <p>
-                Harmonic Insightは、建設業DXと業務システムの専門家によって設立されました。
-              </p>
+              {/* Intro */}
+              <div className="space-y-4">
+                <p>
+                  Harmonic Insightは「仕組み化」の専門家によって設立されました。
+                </p>
+                <p className="text-gray-600 dark:text-gray-400">
+                  業務を部品として設計し、誰でも回る形にする——<br />
+                  この考え方を、建設業DX・業務ツール開発・コンテンツ制作に適用しています。
+                </p>
+              </div>
 
               {/* Stats */}
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 py-6">
@@ -170,58 +177,55 @@ export default function CompanyPage() {
                 </div>
                 <div className="text-center p-4 bg-gray-50 dark:bg-gray-900 rounded-lg">
                   <p className="text-3xl font-bold text-gray-900 dark:text-white">7年</p>
-                  <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">建設業DX専門</p>
+                  <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">建設業DX</p>
                 </div>
                 <div className="text-center p-4 bg-gray-50 dark:bg-gray-900 rounded-lg">
                   <p className="text-3xl font-bold text-gray-900 dark:text-white">200分野+</p>
-                  <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">大規模プロジェクトで統括</p>
+                  <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">大規模PJで統括</p>
                 </div>
               </div>
 
-              {/* 建設業での主な実績 */}
+              {/* 主な実績 */}
               <div>
-                <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
-                  建設業での主な実績
+                <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-6">
+                  主な実績
                 </h3>
-                <div className="space-y-4">
-                  <div className="bg-gray-50 dark:bg-gray-900 rounded-lg p-4">
-                    <p className="font-medium text-gray-900 dark:text-white mb-1">
-                      大規模スタジアム建設プロジェクト
+                <div className="space-y-6">
+                  {/* 建設業DX */}
+                  <div className="bg-gray-50 dark:bg-gray-900 rounded-lg p-5">
+                    <p className="font-semibold text-gray-900 dark:text-white mb-3">
+                      建設業DX
                     </p>
-                    <p className="text-sm text-gray-600 dark:text-gray-400">
-                      世界中の最新競技場の技術をリサーチし、200以上の分野におけるシステム構成と全体スケジュールのグランドデザインを策定。
-                    </p>
+                    <ul className="space-y-2 text-sm text-gray-600 dark:text-gray-400">
+                      <li>大規模スタジアム建設プロジェクトで200以上の分野のシステム構成を統括。</li>
+                      <li>営業・積算・調達・施工管理を一気通貫で管理するDXシステムの全体構想・要件定義を推進。</li>
+                      <li>原価管理・実行予算の業務改善、BIM統合管理ツールの企画・導入を実施。</li>
+                    </ul>
                   </div>
-                  <div className="bg-gray-50 dark:bg-gray-900 rounded-lg p-4">
-                    <p className="font-medium text-gray-900 dark:text-white mb-1">
-                      建設DXシステムの全体構想
+
+                  {/* 業務システム・RPA */}
+                  <div className="bg-gray-50 dark:bg-gray-900 rounded-lg p-5">
+                    <p className="font-semibold text-gray-900 dark:text-white mb-3">
+                      業務システム・RPA
                     </p>
-                    <p className="text-sm text-gray-600 dark:text-gray-400">
-                      営業・積算・調達・施工管理を一気通貫で管理するシステムの企画・全体構想・要件定義をリード。
-                    </p>
+                    <ul className="space-y-2 text-sm text-gray-600 dark:text-gray-400">
+                      <li>会計パッケージの開発・導入に10年従事。</li>
+                      <li>標準プロセス・ドキュメント・周辺ツールを整備し、「誰でも再現できる形」にして展開。</li>
+                      <li>RPA導入では教育マテリアルと標準フレームワークを自ら作成し、導入手法として確立。</li>
+                    </ul>
                   </div>
-                  <div className="bg-gray-50 dark:bg-gray-900 rounded-lg p-4">
-                    <p className="font-medium text-gray-900 dark:text-white mb-1">
-                      原価管理・BIM統合
+
+                  {/* コンテンツ制作 */}
+                  <div className="bg-gray-50 dark:bg-gray-900 rounded-lg p-5">
+                    <p className="font-semibold text-gray-900 dark:text-white mb-3">
+                      コンテンツ制作
                     </p>
-                    <p className="text-sm text-gray-600 dark:text-gray-400">
-                      実行予算管理の業務改善、BIMを軸とした統合管理ツールの企画・導入を推進。
-                    </p>
+                    <ul className="space-y-2 text-sm text-gray-600 dark:text-gray-400">
+                      <li>AI×未来×日本をテーマに、7シリーズ・19作品の小説を多言語で展開。</li>
+                      <li>企画から編集・翻訳・サイト構築まで、創作プロセスも仕組み化して運用。</li>
+                    </ul>
                   </div>
                 </div>
-              </div>
-
-              {/* 仕組み化へのこだわり */}
-              <div>
-                <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
-                  仕組み化へのこだわり
-                </h3>
-                <p className="mb-4">
-                  単なる導入支援ではなく、標準プロセス・ドキュメント・周辺ツールを整備し、「誰でも再現できる形」にして展開してきました。
-                </p>
-                <p>
-                  RPA導入では教育マテリアルと標準フレームワークを自ら作成し、導入手法として社内展開。この経験がHarmonic Insightの原点です。
-                </p>
               </div>
 
               {/* Closing Quote */}
