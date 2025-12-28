@@ -133,7 +133,7 @@ export default function CompanyPage() {
               </div>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
                 <dt className="text-gray-500 dark:text-gray-400 font-medium">代表</dt>
-                <dd className="md:col-span-2 text-gray-900 dark:text-white">代表社員</dd>
+                <dd className="md:col-span-2 text-gray-900 dark:text-white">瀬田ルリ子</dd>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
                 <dt className="text-gray-500 dark:text-gray-400 font-medium">所在地</dt>
@@ -217,29 +217,33 @@ export default function CompanyPage() {
             </h2>
             <div className="space-y-6 text-gray-700 dark:text-gray-300 leading-relaxed">
               <p>
-                建設業界のデジタルトランスフォーメーション支援に28年間従事。
-                これまでに700社以上の企業を支援し、業務改革・システム導入・組織変革を推進してきました。
+                IT業界で22年、うち建設業DX支援に7年従事。
+                会計パッケージの開発・導入を10年、ASEAN地域を中心としたグローバル展開を7年経験してきました。
               </p>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 py-6">
                 <div className="text-center p-4 bg-gray-50 dark:bg-gray-900 rounded-lg">
-                  <p className="text-3xl font-bold text-gray-900 dark:text-white">28年</p>
+                  <p className="text-3xl font-bold text-gray-900 dark:text-white">22年</p>
+                  <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">IT業界</p>
+                </div>
+                <div className="text-center p-4 bg-gray-50 dark:bg-gray-900 rounded-lg">
+                  <p className="text-3xl font-bold text-gray-900 dark:text-white">7年</p>
                   <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">建設業DX支援</p>
                 </div>
                 <div className="text-center p-4 bg-gray-50 dark:bg-gray-900 rounded-lg">
-                  <p className="text-3xl font-bold text-gray-900 dark:text-white">700社+</p>
-                  <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">支援実績</p>
-                </div>
-                <div className="text-center p-4 bg-gray-50 dark:bg-gray-900 rounded-lg">
-                  <p className="text-3xl font-bold text-gray-900 dark:text-white">約40冊</p>
-                  <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">著書</p>
+                  <p className="text-3xl font-bold text-gray-900 dark:text-white">50社+</p>
+                  <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">コンサル実績</p>
                 </div>
               </div>
               <p>
-                デンツーソーケン（現 電通総研）でのSTRAVIS会計パッケージ開発、
-                タイ・中国・香港でのグローバルビジネス開発、
-                UiPathのRPA事業立ち上げを経て、
-                FPT Consulting Japanにて建設DX事業を統括。
-                20名以上のチームを率い、建設業特化のDXソリューションを展開してきました。
+                電通国際情報サービス（現 電通総研）にて会計パッケージSTRAVISの開発・導入に従事。
+                その後、タイ・中国・香港でのグローバルビジネス開発、
+                UiPathでのRPA事業立ち上げを経て、
+                FPT Consulting Japanにて建設DX事業を統括してきました。
+              </p>
+              <p>
+                親が工務店を経営しており、学生時代から現場を手伝ってきた「建設一家」出身。
+                弟も建設会社を経営しています。
+                現場の空気を知っているからこそ、「使われる仕組み」を設計できると考えています。
               </p>
               <p>
                 「業務を部品として設計し、誰でも回る形にする」という考え方のもと、
