@@ -297,25 +297,45 @@ export default function CompanyPage() {
           </div>
         </section>
 
-        {/* 体制 */}
+        {/* 経営体制 */}
         <section className="py-12 px-4 sm:px-6 bg-gray-50 dark:bg-gray-900/50">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-lg font-semibold text-gray-900 dark:text-white mb-6">
-              体制
+              経営体制
             </h2>
-            <div className="flex flex-col sm:flex-row gap-3 sm:gap-6">
-              <div className="sm:w-44 flex-shrink-0">
-                <p className="text-xs text-gray-500 dark:text-gray-400 uppercase tracking-wider mb-0.5">
-                  Chief Architect / Strategist
-                </p>
-                <p className="text-base font-medium text-gray-900 dark:text-white">
-                  Erik Arthur
-                </p>
+            <div className="space-y-6">
+              {/* 代表社員 */}
+              <div className="flex flex-col sm:flex-row gap-3 sm:gap-6">
+                <div className="sm:w-44 flex-shrink-0">
+                  <p className="text-xs text-gray-500 dark:text-gray-400 tracking-wider mb-0.5">
+                    代表社員
+                  </p>
+                  <p className="text-base font-semibold text-gray-900 dark:text-white">
+                    瀬田 ルリ子
+                  </p>
+                </div>
+                <div className="flex-grow">
+                  <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
+                    ハーモニックインサイト合同会社の代表として、会社運営および事業推進を統括しています。
+                  </p>
+                </div>
               </div>
-              <div className="flex-grow">
-                <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
-                  業務を部品として設計し、組み立てて回る形にする業務設計と、Insight Seriesの設計思想・全体構造を担当しています。
-                </p>
+
+              {/* Chief Architect / Strategist */}
+              <div className="flex flex-col sm:flex-row gap-3 sm:gap-6 pt-5 border-t border-gray-200 dark:border-gray-700">
+                <div className="sm:w-44 flex-shrink-0">
+                  <p className="text-xs text-gray-500 dark:text-gray-400 tracking-wider mb-0.5">
+                    Chief Architect / Strategist
+                  </p>
+                  <p className="text-base font-medium text-gray-900 dark:text-white">
+                    Erik Arthur
+                  </p>
+                </div>
+                <div className="flex-grow">
+                  <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
+                    業務を部品として設計し、組み立てて回る設計思想の構築、Insight Seriesのプロダクト設計、Harmonic Insightにおける全体アーキテクチャ戦略を担当しています。
+                  </p>
+                </div>
               </div>
             </div>
           </div>
