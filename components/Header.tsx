@@ -2,10 +2,14 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const pathname = usePathname();
+
+  const isEnglish = pathname.startsWith("/en");
 
   useEffect(() => {
     const handleScroll = () => {
@@ -15,11 +19,31 @@ export default function Header() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const navItems = [
-    { href: "/", label: "Home" },
-    { href: "/services", label: "Services" },
-    { href: "/company", label: "Company" },
-  ];
+  // Get corresponding path for language switch
+  const getAlternatePath = () => {
+    if (isEnglish) {
+      // EN -> JP: remove /en prefix
+      const jpPath = pathname.replace(/^\/en/, "") || "/";
+      return jpPath;
+    } else {
+      // JP -> EN: add /en prefix
+      return `/en${pathname === "/" ? "" : pathname}`;
+    }
+  };
+
+  const navItems = isEnglish
+    ? [
+        { href: "/en", label: "Home" },
+        { href: "/en/company", label: "Company" },
+      ]
+    : [
+        { href: "/", label: "Home" },
+        { href: "/services", label: "Services" },
+        { href: "/company", label: "Company" },
+      ];
+
+  const contactHref = isEnglish ? "/en#contact" : "#contact";
+  const homeHref = isEnglish ? "/en" : "/";
 
   return (
     <header
@@ -33,7 +57,7 @@ export default function Header() {
         <div className="flex items-center justify-between h-16 sm:h-20">
           {/* Logo */}
           <Link
-            href="/"
+            href={homeHref}
             className="text-lg sm:text-xl font-semibold text-gray-900 dark:text-white tracking-tight"
           >
             Harmonic Insight
@@ -51,17 +75,51 @@ export default function Header() {
               </Link>
             ))}
             <a
-              href="#contact"
+              href={contactHref}
               className="px-4 py-2 bg-primary-600 hover:bg-primary-700 text-white text-sm font-medium rounded-lg transition-colors duration-200"
             >
               Contact
             </a>
+
+            {/* Language Switch */}
+            <div className="flex items-center text-sm border-l border-gray-200 dark:border-gray-700 pl-6 ml-2">
+              <Link
+                href={isEnglish ? getAlternatePath() : pathname}
+                className={`${!isEnglish ? "text-gray-900 dark:text-white font-medium" : "text-gray-400 dark:text-gray-500 hover:text-gray-600 dark:hover:text-gray-300"}`}
+              >
+                JP
+              </Link>
+              <span className="mx-2 text-gray-300 dark:text-gray-600">|</span>
+              <Link
+                href={isEnglish ? pathname : getAlternatePath()}
+                className={`${isEnglish ? "text-gray-900 dark:text-white font-medium" : "text-gray-400 dark:text-gray-500 hover:text-gray-600 dark:hover:text-gray-300"}`}
+              >
+                EN
+              </Link>
+            </div>
           </nav>
 
-          {/* Mobile: CTA + Menu */}
+          {/* Mobile: Language + CTA + Menu */}
           <div className="flex items-center gap-3 lg:hidden">
+            {/* Mobile Language Switch */}
+            <div className="flex items-center text-xs">
+              <Link
+                href={isEnglish ? getAlternatePath() : pathname}
+                className={`${!isEnglish ? "text-gray-900 dark:text-white font-medium" : "text-gray-400 dark:text-gray-500"}`}
+              >
+                JP
+              </Link>
+              <span className="mx-1 text-gray-300 dark:text-gray-600">|</span>
+              <Link
+                href={isEnglish ? pathname : getAlternatePath()}
+                className={`${isEnglish ? "text-gray-900 dark:text-white font-medium" : "text-gray-400 dark:text-gray-500"}`}
+              >
+                EN
+              </Link>
+            </div>
+
             <a
-              href="#contact"
+              href={contactHref}
               className="px-3 py-1.5 bg-primary-600 hover:bg-primary-700 text-white text-xs font-medium rounded-lg transition-colors duration-200"
             >
               Contact
