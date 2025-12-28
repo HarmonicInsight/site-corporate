@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { Metadata } from "next";
+import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
@@ -71,33 +72,8 @@ export default function CompanyPage() {
 
   return (
     <>
-      {/* Header */}
-      <header className="border-b border-gray-100 dark:border-gray-800">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
-          <Link
-            href="/"
-            className="text-xl font-semibold text-gray-900 dark:text-white tracking-tight hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
-          >
-            Harmonic Insight
-          </Link>
-          <nav className="flex items-center space-x-4">
-            <Link
-              href="/services"
-              className="text-sm text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
-            >
-              Services
-            </Link>
-            <Link
-              href="/#contact"
-              className="text-sm text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
-            >
-              Contact
-            </Link>
-          </nav>
-        </div>
-      </header>
-
-      <main className="min-h-screen bg-white dark:bg-gray-950">
+      <Header />
+      <main className="min-h-screen bg-white dark:bg-gray-950 pt-16 sm:pt-20">
         {/* Hero Section */}
         <section className="py-16 sm:py-20 px-4 sm:px-6 bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-gray-950">
           <div className="max-w-4xl mx-auto text-center">
