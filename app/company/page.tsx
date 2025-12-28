@@ -4,14 +4,14 @@ import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "会社概要 | Harmonic Insight LLC",
-  description: "ハーモニックインサイト合同会社の会社概要。建設業DX支援、ソフトウェア開発、コンテンツ制作を行っています。",
+  description: "業務を部品として定義し、組み立てて、誰でも回る形にする。建設業DX支援、ソフトウェア開発、コンテンツ制作を行っています。",
 };
 
 export default function CompanyPage() {
   const businessAreas = [
     {
       title: "建設DXの窓口",
-      description: "建設業の経営判断を、勘と経験から仕組みと数字へ。業務ドック・DX診断・コンサルティング。",
+      description: "業務を部品化し、誰でも回る仕組みに。業務ドック・DX診断・コンサルティング。",
       href: "https://const-dx-home.vercel.app/",
       color: "blue",
       icon: (
@@ -22,7 +22,7 @@ export default function CompanyPage() {
     },
     {
       title: "Insightシリーズ",
-      description: "業務の頭の中を構造化して自動化する。資料作成・データ処理・ヒアリングツール群。",
+      description: "属人化をほどく設計・変換・説明の基盤。現場に負担をかけないツール群。",
       href: "https://insight-series-site.vercel.app/",
       color: "emerald",
       icon: (
@@ -33,7 +33,7 @@ export default function CompanyPage() {
     },
     {
       title: "Apps",
-      description: "モバイルアプリケーション。脳トレ・診断・生産性ツールなど、日々の生活とビジネスを支援。",
+      description: "脳トレ・診断・生産性ツール。日常を仕組みで支援するアプリ群。",
       href: "https://h-insight-apps-portal.vercel.app/",
       color: "violet",
       icon: (
@@ -44,7 +44,7 @@ export default function CompanyPage() {
     },
     {
       title: "Novels",
-      description: "AI×未来×日本を見つめなおす独創プラットフォーム。7シリーズ・19作品を多言語で展開。",
+      description: "AI×未来×日本を描く小説群。創作プロセスも仕組み化して多言語展開。",
       href: "https://novels.h-insight.jp/",
       color: "amber",
       icon: (
@@ -106,7 +106,7 @@ export default function CompanyPage() {
               会社概要
             </h1>
             <p className="text-lg text-gray-600 dark:text-gray-400">
-              思考と創造を、形にする。
+              業務を部品として定義し、組み立てて、誰でも回る形にする。
             </p>
           </div>
         </section>
@@ -118,7 +118,7 @@ export default function CompanyPage() {
               事業領域
             </h2>
             <p className="text-gray-600 dark:text-gray-400 text-center mb-12">
-              4つの領域で、思考と創造を形にしています。
+              4つの領域で、仕組み化を実践しています。
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">

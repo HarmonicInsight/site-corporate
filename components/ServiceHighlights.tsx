@@ -66,10 +66,10 @@ export default function ServiceHighlights() {
       <div className="max-w-4xl mx-auto">
         <div className="fade-in-section text-center mb-10">
           <h2 className="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white mb-2">
-            サービス
+            法人向けサービス
           </h2>
           <p className="text-sm text-gray-600 dark:text-gray-400">
-            業務プロセスの設計・改善を支援します
+            業務の部品化・仕組み化を、短期間で実装します
           </p>
         </div>
 

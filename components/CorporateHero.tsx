@@ -34,18 +34,15 @@ export default function CorporateHero() {
       {/* Content */}
       <div className="relative z-10 text-center max-w-3xl mx-auto py-20">
         <h1 className="fade-in-section text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-8 leading-tight">
-          思考と創造を、形にする。
+          業務を、誰でも回る形に。
         </h1>
 
-        <div className="fade-in-section space-y-2 text-base sm:text-lg text-gray-600 dark:text-gray-400 leading-relaxed">
+        <div className="fade-in-section space-y-3 text-base sm:text-lg text-gray-600 dark:text-gray-400 leading-relaxed">
           <p>
-            Harmonic Insight は、業務・技術・人の関係を「構造」で捉え、
+            業務を部品として定義し、組み立てて、誰でも回る形にする。
           </p>
-          <p>
-            再現可能な形に設計することを大切にしています。
-          </p>
-          <p className="text-gray-500 dark:text-gray-500 text-sm pt-2">
-            詳細は専用サイトとサービスページでご案内しています。
+          <p className="text-gray-500 dark:text-gray-500 text-sm">
+            属人性を仕組みで解消し、現場に負担をかけない設計を支援します。
           </p>
         </div>
       </div>
