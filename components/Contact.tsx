@@ -132,13 +132,13 @@ export default function Contact() {
             フォーム以外でのご連絡
           </p>
           <a
-            href="mailto:info@harmonic-insight.jp"
+            href="mailto:info@h-insight.jp"
             className="inline-flex items-center text-sm text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300"
           >
             <svg className="w-4 h-4 mr-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
             </svg>
-            info@harmonic-insight.jp
+            info@h-insight.jp
           </a>
         </div>
       </div>

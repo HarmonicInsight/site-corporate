@@ -80,7 +80,7 @@ export default function PrivacyPage() {
                 個人情報の取り扱いに関するお問い合わせは、下記までご連絡ください。
               </p>
               <p className="text-sm text-gray-600 dark:text-gray-400 mt-2">
-                メール：info@harmonic-insight.jp
+                メール：info@h-insight.jp
               </p>
             </section>
 
