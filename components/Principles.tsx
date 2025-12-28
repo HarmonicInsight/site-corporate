@@ -44,7 +44,7 @@ export default function Principles() {
   return (
     <section
       ref={sectionRef}
-      className="py-16 sm:py-20 px-4 sm:px-6 bg-white dark:bg-gray-950"
+      className="pt-10 pb-12 sm:py-16 md:py-20 px-4 sm:px-6 bg-white dark:bg-gray-950"
     >
       <div className="max-w-4xl mx-auto">
         <div className="grid md:grid-cols-3 gap-8">

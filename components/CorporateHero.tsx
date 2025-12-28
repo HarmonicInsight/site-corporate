@@ -26,13 +26,13 @@ export default function CorporateHero() {
   return (
     <section
       ref={sectionRef}
-      className="relative min-h-[60vh] flex items-center justify-center px-4 sm:px-6 overflow-hidden"
+      className="relative px-4 sm:px-6 overflow-hidden pt-24 pb-10 sm:pt-28 sm:pb-14 md:pt-32 md:pb-20"
     >
       {/* Background */}
       <div className="absolute inset-0 bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-gray-950" />
 
       {/* Content */}
-      <div className="relative z-10 text-center max-w-3xl mx-auto py-20">
+      <div className="relative z-10 text-center max-w-3xl mx-auto">
         <h1 className="fade-in-section text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-8 leading-tight">
           業務を、誰でも回る形に。
         </h1>
