@@ -209,46 +209,88 @@ export default function CompanyPage() {
           </div>
         </section>
 
-        {/* 代表について */}
+        {/* 創業の背景 */}
         <section className="py-16 px-4 sm:px-6">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white mb-8 pb-4 border-b border-gray-200 dark:border-gray-700">
-              代表について
+              創業の背景
             </h2>
-            <div className="space-y-6 text-gray-700 dark:text-gray-300 leading-relaxed">
+            <div className="space-y-8 text-gray-700 dark:text-gray-300 leading-relaxed">
               <p>
-                IT業界で22年、うち建設業DX支援に7年従事。
-                会計パッケージの開発・導入を10年、ASEAN地域を中心としたグローバル展開を7年経験してきました。
+                Harmonic Insightは、建設業DXと業務システムの専門家によって設立されました。
               </p>
+
+              {/* Stats */}
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 py-6">
                 <div className="text-center p-4 bg-gray-50 dark:bg-gray-900 rounded-lg">
-                  <p className="text-3xl font-bold text-gray-900 dark:text-white">22年</p>
+                  <p className="text-3xl font-bold text-gray-900 dark:text-white">約30年</p>
                   <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">IT業界</p>
                 </div>
                 <div className="text-center p-4 bg-gray-50 dark:bg-gray-900 rounded-lg">
                   <p className="text-3xl font-bold text-gray-900 dark:text-white">7年</p>
-                  <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">建設業DX支援</p>
+                  <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">建設業DX専門</p>
                 </div>
                 <div className="text-center p-4 bg-gray-50 dark:bg-gray-900 rounded-lg">
-                  <p className="text-3xl font-bold text-gray-900 dark:text-white">50社+</p>
-                  <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">コンサル実績</p>
+                  <p className="text-3xl font-bold text-gray-900 dark:text-white">200分野+</p>
+                  <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">大規模プロジェクトで統括</p>
                 </div>
               </div>
-              <p>
-                電通国際情報サービス（現 電通総研）にて会計パッケージSTRAVISの開発・導入に従事。
-                その後、タイ・中国・香港でのグローバルビジネス開発、
-                UiPathでのRPA事業立ち上げを経て、
-                FPT Consulting Japanにて建設DX事業を統括してきました。
-              </p>
-              <p>
-                親が工務店を経営しており、学生時代から現場を手伝ってきた「建設一家」出身。
-                弟も建設会社を経営しています。
-                現場の空気を知っているからこそ、「使われる仕組み」を設計できると考えています。
-              </p>
-              <p>
-                「業務を部品として設計し、誰でも回る形にする」という考え方のもと、
-                ツール導入ではなく業務の本質的な改善を支援しています。
-              </p>
+
+              {/* 建設業での主な実績 */}
+              <div>
+                <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
+                  建設業での主な実績
+                </h3>
+                <div className="space-y-4">
+                  <div className="bg-gray-50 dark:bg-gray-900 rounded-lg p-4">
+                    <p className="font-medium text-gray-900 dark:text-white mb-1">
+                      大規模スタジアム建設プロジェクト
+                    </p>
+                    <p className="text-sm text-gray-600 dark:text-gray-400">
+                      世界中の最新競技場の技術をリサーチし、200以上の分野におけるシステム構成と全体スケジュールのグランドデザインを策定。
+                    </p>
+                  </div>
+                  <div className="bg-gray-50 dark:bg-gray-900 rounded-lg p-4">
+                    <p className="font-medium text-gray-900 dark:text-white mb-1">
+                      建設DXシステムの全体構想
+                    </p>
+                    <p className="text-sm text-gray-600 dark:text-gray-400">
+                      営業・積算・調達・施工管理を一気通貫で管理するシステムの企画・全体構想・要件定義をリード。
+                    </p>
+                  </div>
+                  <div className="bg-gray-50 dark:bg-gray-900 rounded-lg p-4">
+                    <p className="font-medium text-gray-900 dark:text-white mb-1">
+                      原価管理・BIM統合
+                    </p>
+                    <p className="text-sm text-gray-600 dark:text-gray-400">
+                      実行予算管理の業務改善、BIMを軸とした統合管理ツールの企画・導入を推進。
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* 仕組み化へのこだわり */}
+              <div>
+                <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
+                  仕組み化へのこだわり
+                </h3>
+                <p className="mb-4">
+                  単なる導入支援ではなく、標準プロセス・ドキュメント・周辺ツールを整備し、「誰でも再現できる形」にして展開してきました。
+                </p>
+                <p>
+                  RPA導入では教育マテリアルと標準フレームワークを自ら作成し、導入手法として社内展開。この経験がHarmonic Insightの原点です。
+                </p>
+              </div>
+
+              {/* Closing Quote */}
+              <div className="border-l-4 border-primary-500 pl-6 py-2 bg-gray-50 dark:bg-gray-900 rounded-r-lg">
+                <p className="text-lg font-medium text-gray-900 dark:text-white mb-2">
+                  「業務を部品として設計し、誰でも回る形にする」
+                </p>
+                <p className="text-sm text-gray-600 dark:text-gray-400">
+                  ツール導入ではなく、業務の本質的な改善を支援しています。
+                </p>
+              </div>
             </div>
           </div>
         </section>
