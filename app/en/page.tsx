@@ -21,7 +21,7 @@ export default function HomeEN() {
       url: "https://insight-series-site.vercel.app/",
     },
     {
-      title: "TokoBi",
+      title: "InsightBI",
       description: "BI dashboard service. (Japanese)",
       url: "https://insight-bi-ruby.vercel.app/",
     },

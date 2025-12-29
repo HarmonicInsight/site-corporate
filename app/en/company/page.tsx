@@ -33,7 +33,7 @@ export default function CompanyPageEN() {
       ),
     },
     {
-      title: "TokoBi",
+      title: "InsightBI",
       description: "BI dashboard service. (Japanese)",
       href: "https://insight-bi-ruby.vercel.app/",
       color: "cyan",
