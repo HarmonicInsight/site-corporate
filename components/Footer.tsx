@@ -9,11 +9,11 @@ export default function Footer() {
 
   // Group sites (same as Header)
   const groupSites = [
-    { href: "/", label: "Corporate", current: true },
+    { href: "/", label: "Home", current: true },
     { href: "https://const-dx-home.vercel.app/", label: "建設DX", external: true },
-    { href: "https://insight-bi-ruby.vercel.app/", label: "InsightBI", external: true },
-    { href: "https://h-insight-apps-portal.vercel.app/", label: "Apps", external: true },
-    { href: "https://novels.h-insight.jp/", label: "Novels", external: true },
+    { href: "https://insight-series-site.vercel.app/", label: "Insight Series", external: true },
+    { href: "https://h-insight-apps-portal.vercel.app/", label: "Apps/Lab", external: true },
+    { href: "https://insight-bi-ruby.vercel.app/", label: "Dashboard", external: true },
   ];
 
   const navItems = isEnglish
@@ -29,11 +29,11 @@ export default function Footer() {
       ];
 
   return (
-    <footer className="bg-gray-50 dark:bg-gray-900/50 border-t border-gray-100 dark:border-gray-800">
+    <footer className="bg-gray-900 text-white">
       {/* Group Sites */}
-      <div className="border-b border-gray-100 dark:border-gray-800">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 py-6">
-          <p className="text-xs text-gray-400 dark:text-gray-500 mb-3">Harmonic Insight Group</p>
+      <div className="border-b border-gray-800">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 py-8">
+          <p className="text-xs text-gray-500 mb-4 tracking-wider">HARMONIC INSIGHT GROUP</p>
           <nav className="flex flex-wrap gap-x-6 gap-y-2">
             {groupSites.map((site) =>
               site.external ? (
@@ -42,7 +42,7 @@ export default function Footer() {
                   href={site.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-sm text-gray-500 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
+                  className="text-sm text-gray-400 hover:text-white transition-colors"
                 >
                   {site.label}
                 </a>
@@ -52,8 +52,8 @@ export default function Footer() {
                   href={site.href}
                   className={`text-sm transition-colors ${
                     site.current
-                      ? "text-gray-900 dark:text-white font-medium"
-                      : "text-gray-500 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400"
+                      ? "text-white font-medium"
+                      : "text-gray-400 hover:text-white"
                   }`}
                 >
                   {site.label}
@@ -68,10 +68,10 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 py-6">
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
           <div className="text-center sm:text-left">
-            <p className="text-sm text-gray-500 dark:text-gray-400">
+            <p className="text-sm text-gray-400">
               &copy; 2025 Harmonic Insight LLC
             </p>
-            <p className="text-xs text-gray-400 dark:text-gray-500 mt-1">
+            <p className="text-xs text-gray-500 mt-1">
               Strategy &amp; Architecture by Erik Arthur
             </p>
           </div>
@@ -81,7 +81,7 @@ export default function Footer() {
               <Link
                 key={item.href}
                 href={item.href}
-                className="text-sm text-gray-500 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors duration-200"
+                className="text-sm text-gray-400 hover:text-white transition-colors duration-200"
               >
                 {item.label}
               </Link>
