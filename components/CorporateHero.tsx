@@ -26,7 +26,7 @@ export default function CorporateHero() {
   return (
     <section
       ref={sectionRef}
-      className="relative px-4 sm:px-6 overflow-hidden pt-24 pb-10 sm:pt-28 sm:pb-14 md:pt-32 md:pb-20"
+      className="relative px-4 sm:px-6 overflow-hidden pt-28 pb-10 sm:pt-32 sm:pb-14 md:pt-36 md:pb-20"
     >
       {/* Background */}
       <div className="absolute inset-0 bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-gray-950" />

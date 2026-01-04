@@ -19,18 +19,24 @@ export default function Header() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Get corresponding path for language switch
   const getAlternatePath = () => {
     if (isEnglish) {
-      // EN -> JP: remove /en prefix
       const jpPath = pathname.replace(/^\/en/, "") || "/";
       return jpPath;
     } else {
-      // JP -> EN: add /en prefix
       return `/en${pathname === "/" ? "" : pathname}`;
     }
   };
 
+  // Group sites navigation (external)
+  const groupSites = [
+    { href: "/", label: "Corporate", current: true },
+    { href: "https://const-dx-home.vercel.app/", label: "建設DX", external: true },
+    { href: "https://insight-bi-ruby.vercel.app/", label: "InsightBI", external: true },
+    { href: "https://h-insight-apps-portal.vercel.app/", label: "Apps", external: true },
+  ];
+
+  // Site-specific navigation
   const navItems = isEnglish
     ? [
         { href: "/en", label: "Home" },
@@ -53,8 +59,62 @@ export default function Header() {
           : "bg-transparent"
       }`}
     >
+      {/* Group Navigation Bar */}
+      <div className="border-b border-gray-100 dark:border-gray-800 bg-gray-50/80 dark:bg-gray-900/80 backdrop-blur-sm">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6">
+          <div className="flex items-center justify-between h-8">
+            {/* Group Sites */}
+            <nav className="flex items-center space-x-1 text-xs">
+              {groupSites.map((site) =>
+                site.external ? (
+                  <a
+                    key={site.href}
+                    href={site.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-2 py-1 text-gray-500 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
+                  >
+                    {site.label}
+                  </a>
+                ) : (
+                  <Link
+                    key={site.href}
+                    href={site.href}
+                    className={`px-2 py-1 transition-colors ${
+                      site.current
+                        ? "text-gray-900 dark:text-white font-medium"
+                        : "text-gray-500 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400"
+                    }`}
+                  >
+                    {site.label}
+                  </Link>
+                )
+              )}
+            </nav>
+
+            {/* Language Switch (Top Bar) */}
+            <div className="flex items-center text-xs">
+              <Link
+                href={isEnglish ? getAlternatePath() : pathname}
+                className={`px-1.5 ${!isEnglish ? "text-gray-900 dark:text-white font-medium" : "text-gray-400 dark:text-gray-500 hover:text-gray-600 dark:hover:text-gray-300"}`}
+              >
+                JP
+              </Link>
+              <span className="text-gray-300 dark:text-gray-600">|</span>
+              <Link
+                href={isEnglish ? pathname : getAlternatePath()}
+                className={`px-1.5 ${isEnglish ? "text-gray-900 dark:text-white font-medium" : "text-gray-400 dark:text-gray-500 hover:text-gray-600 dark:hover:text-gray-300"}`}
+              >
+                EN
+              </Link>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Main Navigation */}
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
-        <div className="flex items-center justify-between h-16 sm:h-20">
+        <div className="flex items-center justify-between h-14 sm:h-16">
           {/* Logo */}
           <Link
             href={homeHref}
@@ -64,7 +124,7 @@ export default function Header() {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center space-x-6">
+          <nav className="hidden md:flex items-center space-x-6">
             {navItems.map((item) => (
               <Link
                 key={item.href}
@@ -80,44 +140,10 @@ export default function Header() {
             >
               Contact
             </a>
-
-            {/* Language Switch */}
-            <div className="flex items-center text-sm border-l border-gray-200 dark:border-gray-700 pl-6 ml-2">
-              <Link
-                href={isEnglish ? getAlternatePath() : pathname}
-                className={`${!isEnglish ? "text-gray-900 dark:text-white font-medium" : "text-gray-400 dark:text-gray-500 hover:text-gray-600 dark:hover:text-gray-300"}`}
-              >
-                JP
-              </Link>
-              <span className="mx-2 text-gray-300 dark:text-gray-600">|</span>
-              <Link
-                href={isEnglish ? pathname : getAlternatePath()}
-                className={`${isEnglish ? "text-gray-900 dark:text-white font-medium" : "text-gray-400 dark:text-gray-500 hover:text-gray-600 dark:hover:text-gray-300"}`}
-              >
-                EN
-              </Link>
-            </div>
           </nav>
 
-          {/* Mobile: Language + CTA + Menu */}
-          <div className="flex items-center gap-3 lg:hidden">
-            {/* Mobile Language Switch */}
-            <div className="flex items-center text-xs">
-              <Link
-                href={isEnglish ? getAlternatePath() : pathname}
-                className={`${!isEnglish ? "text-gray-900 dark:text-white font-medium" : "text-gray-400 dark:text-gray-500"}`}
-              >
-                JP
-              </Link>
-              <span className="mx-1 text-gray-300 dark:text-gray-600">|</span>
-              <Link
-                href={isEnglish ? pathname : getAlternatePath()}
-                className={`${isEnglish ? "text-gray-900 dark:text-white font-medium" : "text-gray-400 dark:text-gray-500"}`}
-              >
-                EN
-              </Link>
-            </div>
-
+          {/* Mobile Menu Button */}
+          <div className="flex items-center gap-3 md:hidden">
             <a
               href={contactHref}
               className="px-3 py-1.5 bg-primary-600 hover:bg-primary-700 text-white text-xs font-medium rounded-lg transition-colors duration-200"
@@ -157,7 +183,7 @@ export default function Header() {
 
         {/* Mobile Navigation */}
         {isMobileMenuOpen && (
-          <nav className="lg:hidden py-4 border-t border-gray-100 dark:border-gray-800">
+          <nav className="md:hidden py-4 border-t border-gray-100 dark:border-gray-800">
             {navItems.map((item) => (
               <Link
                 key={item.href}
