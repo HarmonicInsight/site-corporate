@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { GlobalNav } from "@/components/GlobalNav";
+import { SiteFooter } from "@/components/SiteFooter";
 
 export const metadata: Metadata = {
   title: "Harmonic Insight LLC | 思考と創造を、形にする",
@@ -42,7 +44,11 @@ export default function RootLayout({
   return (
     <html lang="ja" className="scroll-smooth">
       <body className="bg-white text-gray-900 dark:bg-gray-950 dark:text-gray-100 transition-colors duration-300">
-        {children}
+        <GlobalNav />
+        <div className="pt-10">
+          {children}
+        </div>
+        <SiteFooter />
       </body>
     </html>
   );
