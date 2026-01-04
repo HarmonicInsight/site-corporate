@@ -18,13 +18,11 @@ export default function Footer() {
 
   const navItems = isEnglish
     ? [
-        { href: "/services", label: "Services (Japanese)" },
         { href: "/en/company", label: "Company" },
         { href: "/privacy", label: "Privacy" },
       ]
     : [
-        { href: "/services", label: "Services" },
-        { href: "/company", label: "Company" },
+        { href: "/company", label: "会社概要" },
         { href: "/privacy", label: "Privacy" },
       ];
 

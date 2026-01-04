@@ -45,7 +45,6 @@ export default function Header() {
       ]
     : [
         { href: "/", label: "ホーム" },
-        { href: "/services", label: "サービス" },
         { href: "/company", label: "会社概要" },
       ];
 
