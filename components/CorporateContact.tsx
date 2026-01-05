@@ -91,10 +91,10 @@ export default function CorporateContact() {
                 className="w-full px-4 py-2.5 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded-lg text-sm focus:ring-2 focus:ring-primary-500 focus:border-transparent"
               >
                 <option value="">選択してください</option>
-                <option value="monthly-check">月次実績チェック自動化パック</option>
-                <option value="input-quality">月次・原価の入力品質改善</option>
-                <option value="report">現場報告・帳票の改善</option>
-                <option value="interview">会議しない業務ヒアリング</option>
+                <option value="dx-consulting">DX推進・業務設計の相談</option>
+                <option value="system-development">システム開発・RPA導入</option>
+                <option value="bi-dashboard">BIダッシュボード構築</option>
+                <option value="ai-automation">AI・自動化の導入支援</option>
                 <option value="other">その他</option>
               </select>
             </div>
@@ -108,7 +108,7 @@ export default function CorporateContact() {
                 name="message"
                 rows={4}
                 className="w-full px-4 py-2.5 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded-lg text-sm focus:ring-2 focus:ring-primary-500 focus:border-transparent resize-none"
-                placeholder="例：月次の締めが毎回遅れていて、管理部門が疲弊しています..."
+                placeholder="例：社内システムのDX化を検討しているが、何から始めればいいかわからない..."
               />
             </div>
 
