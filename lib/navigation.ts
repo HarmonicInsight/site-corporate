@@ -2,7 +2,7 @@
  * Harmonic Insight ナビゲーション設定
  */
 
-export type SiteId = "about" | "construction" | "decision" | "apps" | "series" | "blog";
+export type SiteId = "about" | "construction" | "decision" | "insightbi" | "series" | "blog";
 
 export interface SiteConfig {
   id: SiteId;
@@ -49,11 +49,11 @@ export const SITES: SiteConfig[] = [
     order: 11,
   },
   {
-    id: "apps",
-    name: "Apps/Lab",
-    nameEn: "Apps/Lab",
-    url: "https://h-insight-apps-portal.vercel.app/",
-    description: "アプリケーション一覧",
+    id: "insightbi",
+    name: "InsightBI",
+    nameEn: "InsightBI",
+    url: "https://insight-bi-ruby.vercel.app/",
+    description: "ビジネスインテリジェンス・データ分析",
     showInGlobalNav: true,
     showInFooter: true,
     order: 20,
