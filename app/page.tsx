@@ -4,7 +4,6 @@ import Footer from "@/components/Footer";
 import CorporateHero from "@/components/CorporateHero";
 import Principles from "@/components/Principles";
 import ExternalSites from "@/components/ExternalSites";
-import ServiceHighlights from "@/components/ServiceHighlights";
 import CorporateContact from "@/components/CorporateContact";
 
 export const metadata: Metadata = {
@@ -19,7 +18,6 @@ export default function Home() {
       <main>
         <CorporateHero />
         <Principles />
-        <ServiceHighlights />
         <ExternalSites />
         <CorporateContact />
       </main>
