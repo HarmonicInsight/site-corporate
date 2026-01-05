@@ -40,11 +40,9 @@ export default function Header() {
   // Site-specific navigation
   const navItems = isEnglish
     ? [
-        { href: "/en", label: "Home" },
         { href: "/en/company", label: "Company" },
       ]
     : [
-        { href: "/", label: "ホーム" },
         { href: "/company", label: "会社概要" },
       ];
 
