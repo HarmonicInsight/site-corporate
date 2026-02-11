@@ -1,0 +1,41 @@
+{
+  "name": "insight-blog",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "posts:process": "npx tsx scripts/process-posts.ts",
+    "posts:preview": "npx tsx scripts/process-posts.ts --dry-run",
+    "posts:publish": "npx tsx scripts/publish-posts.ts",
+    "images:tasks": "npx tsx scripts/image-tasks.ts",
+    "research:process": "npx tsx scripts/process-research.ts"
+  },
+  "dependencies": {
+    "@mdx-js/loader": "^3.1.1",
+    "@mdx-js/react": "^3.1.1",
+    "@next/mdx": "^16.1.1",
+    "date-fns": "^4.1.0",
+    "framer-motion": "^12.23.26",
+    "gray-matter": "^4.0.3",
+    "lucide-react": "^0.562.0",
+    "next": "16.1.1",
+    "next-intl": "^4.7.0",
+    "next-mdx-remote": "^5.0.0",
+    "react": "19.2.3",
+    "react-dom": "19.2.3"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.1.1",
+    "tailwindcss": "^4",
+    "tsx": "^4.21.0",
+    "typescript": "^5"
+  }
+}

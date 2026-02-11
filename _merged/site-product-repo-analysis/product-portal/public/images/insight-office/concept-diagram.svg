@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" font-family="'Segoe UI', 'Hiragino Sans', sans-serif">
+  <defs>
+    <!-- Background gradient -->
+    <radialGradient id="bgGrad" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#f0f4ff"/>
+      <stop offset="100%" stop-color="#e8edf8"/>
+    </radialGradient>
+    <!-- Glow for center -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <!-- Shadow -->
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-opacity="0.15"/>
+    </filter>
+    <!-- Dashed line marker -->
+    <marker id="dot" viewBox="0 0 6 6" refX="3" refY="3" markerWidth="6" markerHeight="6">
+      <circle cx="3" cy="3" r="2.5" fill="#7c8db5"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="600" rx="16" fill="url(#bgGrad)"/>
+
+  <!-- Title -->
+  <text x="400" y="38" text-anchor="middle" font-size="20" font-weight="700" fill="#1a2744">InsightOffice Sheet</text>
+  <text x="400" y="58" text-anchor="middle" font-size="12" fill="#6b7a99">Excel Simulation &amp; Version Management</text>
+
+  <!-- Connecting lines (behind everything) -->
+  <!-- Excel to each node -->
+  <line x1="400" y1="300" x2="400" y2="130" stroke="#b0bdd4" stroke-width="2" stroke-dasharray="6,4"/>
+  <line x1="400" y1="300" x2="560" y2="180" stroke="#b0bdd4" stroke-width="2" stroke-dasharray="6,4"/>
+  <line x1="400" y1="300" x2="610" y2="340" stroke="#b0bdd4" stroke-width="2" stroke-dasharray="6,4"/>
+  <line x1="400" y1="300" x2="520" y2="480" stroke="#b0bdd4" stroke-width="2" stroke-dasharray="6,4"/>
+  <line x1="400" y1="300" x2="280" y2="480" stroke="#b0bdd4" stroke-width="2" stroke-dasharray="6,4"/>
+  <line x1="400" y1="300" x2="190" y2="340" stroke="#b0bdd4" stroke-width="2" stroke-dasharray="6,4"/>
+  <line x1="400" y1="300" x2="240" y2="180" stroke="#b0bdd4" stroke-width="2" stroke-dasharray="6,4"/>
+
+  <!-- ===== CENTER: Excel ===== -->
+  <g filter="url(#glow)">
+    <circle cx="400" cy="300" r="72" fill="#ffffff" stroke="#217346" stroke-width="3"/>
+  </g>
+  <text x="400" y="280" text-anchor="middle" font-size="36">📊</text>
+  <text x="400" y="308" text-anchor="middle" font-size="17" font-weight="700" fill="#217346">Excel</text>
+  <text x="400" y="326" text-anchor="middle" font-size="10" fill="#5a6e5c">そのまま使える</text>
+  <text x="400" y="340" text-anchor="middle" font-size="10" fill="#5a6e5c">.xlsx 完全互換</text>
+
+  <!-- ===== NODE 1: シナリオ管理 (top center) ===== -->
+  <g filter="url(#shadow)">
+    <rect x="325" y="85" width="150" height="72" rx="14" fill="#ffffff" stroke="#4a7cf7" stroke-width="2"/>
+  </g>
+  <text x="400" y="110" text-anchor="middle" font-size="22">🔀</text>
+  <text x="400" y="130" text-anchor="middle" font-size="12" font-weight="600" fill="#2d3a4e">バージョン管理</text>
+  <text x="400" y="146" text-anchor="middle" font-size="9" fill="#7c8db5">保存・切替・比較</text>
+
+  <!-- ===== NODE 2: AI分析 (top right) ===== -->
+  <g filter="url(#shadow)">
+    <rect x="500" y="140" width="140" height="72" rx="14" fill="#ffffff" stroke="#a855f7" stroke-width="2"/>
+  </g>
+  <text x="570" y="166" text-anchor="middle" font-size="22">🤖</text>
+  <text x="570" y="186" text-anchor="middle" font-size="12" font-weight="600" fill="#2d3a4e">AI 分析</text>
+  <text x="570" y="202" text-anchor="middle" font-size="9" fill="#7c8db5">Claude による洞察</text>
+
+  <!-- ===== NODE 3: スレッドコメント (right) ===== -->
+  <g filter="url(#shadow)">
+    <rect x="545" y="300" width="150" height="72" rx="14" fill="#ffffff" stroke="#f59e0b" stroke-width="2"/>
+  </g>
+  <text x="620" y="326" text-anchor="middle" font-size="22">💬</text>
+  <text x="620" y="346" text-anchor="middle" font-size="12" font-weight="600" fill="#2d3a4e">スレッドコメント</text>
+  <text x="620" y="362" text-anchor="middle" font-size="9" fill="#7c8db5">認証不要・名前だけ</text>
+
+  <!-- ===== NODE 4: セル変更ログ (bottom right) ===== -->
+  <g filter="url(#shadow)">
+    <rect x="450" y="445" width="150" height="72" rx="14" fill="#ffffff" stroke="#ef4444" stroke-width="2"/>
+  </g>
+  <text x="525" y="470" text-anchor="middle" font-size="22">⏺</text>
+  <text x="525" y="490" text-anchor="middle" font-size="12" font-weight="600" fill="#2d3a4e">セル変更ログ</text>
+  <text x="525" y="506" text-anchor="middle" font-size="9" fill="#7c8db5">全セルの変更を自動記録</text>
+
+  <!-- ===== NODE 5: 変更履歴 (bottom left) ===== -->
+  <g filter="url(#shadow)">
+    <rect x="200" y="445" width="150" height="72" rx="14" fill="#ffffff" stroke="#10b981" stroke-width="2"/>
+  </g>
+  <text x="275" y="470" text-anchor="middle" font-size="22">📜</text>
+  <text x="275" y="490" text-anchor="middle" font-size="12" font-weight="600" fill="#2d3a4e">バージョン履歴</text>
+  <text x="275" y="506" text-anchor="middle" font-size="9" fill="#7c8db5">自動保存・差分比較</text>
+
+  <!-- ===== NODE 6: シミュレーション (left) ===== -->
+  <g filter="url(#shadow)">
+    <rect x="110" y="300" width="150" height="72" rx="14" fill="#ffffff" stroke="#0ea5e9" stroke-width="2"/>
+  </g>
+  <text x="185" y="326" text-anchor="middle" font-size="22">📈</text>
+  <text x="185" y="346" text-anchor="middle" font-size="12" font-weight="600" fill="#2d3a4e">シミュレーション</text>
+  <text x="185" y="362" text-anchor="middle" font-size="9" fill="#7c8db5">様々なケースを試算</text>
+
+  <!-- ===== NODE 7: エクスポート (top left) ===== -->
+  <g filter="url(#shadow)">
+    <rect x="160" y="140" width="150" height="72" rx="14" fill="#ffffff" stroke="#64748b" stroke-width="2"/>
+  </g>
+  <text x="235" y="166" text-anchor="middle" font-size="22">📤</text>
+  <text x="235" y="186" text-anchor="middle" font-size="12" font-weight="600" fill="#2d3a4e">エクスポート</text>
+  <text x="235" y="202" text-anchor="middle" font-size="9" fill="#7c8db5">会計・業務システムへ連携</text>
+
+  <!-- Bottom taglines -->
+  <rect x="140" y="545" width="520" height="46" rx="8" fill="#1a2744" opacity="0.9"/>
+  <text x="400" y="564" text-anchor="middle" font-size="13" font-weight="600" fill="#ffffff">Excelはそのまま。周りに知恵が集まる。</text>
+  <text x="400" y="582" text-anchor="middle" font-size="10" fill="#94a3c0">共有フォルダ・Box・SharePoint — ファイルが共有できればどこでも動く</text>
+</svg>

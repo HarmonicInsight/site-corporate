@@ -1,0 +1,63 @@
+{
+  "common": {
+    "home": "Home",
+    "books": "Books",
+    "apps": "Apps",
+    "consulting": "Consulting",
+    "coreSystems": "Core Systems",
+    "ai": "AI",
+    "column": "Column",
+    "about": "About",
+    "search": "Search",
+    "menu": "Menu",
+    "relatedSites": "Related Sites",
+    "readMore": "Read More",
+    "featured": "Featured",
+    "latestPosts": "Latest Posts",
+    "allPosts": "All Posts",
+    "categories": "Categories",
+    "tags": "Tags",
+    "author": "Author",
+    "date": "Date",
+    "share": "Share",
+    "backToHome": "Back to Home",
+    "notFound": "Page Not Found",
+    "searchPlaceholder": "Search articles...",
+    "noResults": "No results found",
+    "loading": "Loading..."
+  },
+  "nav": {
+    "harmonicInsight": "Harmonic Insight",
+    "constructionDX": "Construction DX",
+    "insightSeries": "Insight Series",
+    "appsLab": "Apps/Lab",
+    "dashboard": "Dashboard",
+    "blog": "Blog"
+  },
+  "categories": {
+    "books": "Books",
+    "apps": "Apps",
+    "core-systems": "Core Systems",
+    "consulting": "Consulting",
+    "research": "Research",
+    "ai": "AI",
+    "column": "Column"
+  },
+  "categoryDescriptions": {
+    "books": "Book introductions and recommendations",
+    "apps": "Apps developed by the author",
+    "core-systems": "Core system implementation know-how",
+    "consulting": "Business design and DX consulting insights",
+    "research": "Industry trends and research",
+    "ai": "AI and generative AI utilization",
+    "column": "Daily insights and thoughts"
+  },
+  "about": {
+    "title": "About",
+    "authorBio": "Co-owner of Harmonic Insight LLC. Author of over 30 books. Mobile and Windows app developer. Construction DX consultant with 28 years of experience, supporting over 700 companies. Expert in business analysis for core systems."
+  },
+  "footer": {
+    "copyright": "© {year} InsightBlog. All rights reserved.",
+    "poweredBy": "Powered by Next.js"
+  }
+}

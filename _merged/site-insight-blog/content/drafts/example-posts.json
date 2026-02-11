@@ -1,0 +1,141 @@
+{
+  "posts": [
+    {
+      "title": "Claude APIを使ったチャットボット開発入門",
+      "slug": "claude-api-chatbot-guide",
+      "category": "ai",
+      "tags": ["Claude", "API", "チャットボット", "Python"],
+      "date": "2025-01-03",
+      "summary": "Anthropic社のClaude APIを使って、シンプルなチャットボットを作成する方法を解説します。",
+      "author": "Erik",
+      "featured": true,
+      "generate_thumbnail": true,
+      "thumbnail_prompt": "AI chatbot interface, conversation bubbles, Claude logo style, modern tech aesthetic, orange accents on white",
+      "content": [
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "概要"
+        },
+        {
+          "type": "paragraph",
+          "text": "Claude APIは、Anthropic社が提供する強力な言語モデルAPIです。本記事では、Pythonを使ってシンプルなチャットボットを構築する方法を解説します。"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "必要な環境"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Python 3.8以上",
+            "Anthropic APIキー",
+            "anthropicライブラリ"
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "インストール"
+        },
+        {
+          "type": "code",
+          "language": "bash",
+          "code": "pip install anthropic"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "基本的な使い方"
+        },
+        {
+          "type": "paragraph",
+          "text": "以下のコードで、Claude APIを使った基本的なチャットが実現できます。"
+        },
+        {
+          "type": "code",
+          "language": "python",
+          "code": "import anthropic\n\nclient = anthropic.Anthropic()\n\nmessage = client.messages.create(\n    model=\"claude-sonnet-4-20250514\",\n    max_tokens=1024,\n    messages=[\n        {\"role\": \"user\", \"content\": \"こんにちは！\"}\n    ]\n)\n\nprint(message.content[0].text)"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "まとめ"
+        },
+        {
+          "type": "paragraph",
+          "text": "Claude APIを使えば、わずか数行のコードで高性能なチャットボットを実装できます。次回は、会話履歴の管理やストリーミングレスポンスについて解説します。"
+        }
+      ]
+    },
+    {
+      "title": "建設業DXの第一歩 - 現場写真管理のデジタル化",
+      "slug": "construction-dx-photo-management",
+      "category": "consulting",
+      "tags": ["建設業", "DX", "写真管理", "業務効率化"],
+      "date": "2025-01-02",
+      "summary": "建設現場の写真管理をデジタル化することで、作業効率を劇的に改善する方法を紹介します。",
+      "author": "Erik",
+      "featured": false,
+      "generate_thumbnail": true,
+      "content": [
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "はじめに"
+        },
+        {
+          "type": "paragraph",
+          "text": "建設現場では、日々膨大な量の写真が撮影されます。これらを効率的に管理することが、DX成功の第一歩となります。"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "従来の課題"
+        },
+        {
+          "type": "list",
+          "items": [
+            "撮影した写真の整理に時間がかかる",
+            "必要な写真を探すのに苦労する",
+            "報告書作成時に写真の貼り付けが手間",
+            "複数人での共有が困難"
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "デジタル化のメリット"
+        },
+        {
+          "type": "paragraph",
+          "text": "クラウド型の写真管理システムを導入することで、以下のメリットが得られます。"
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            "撮影と同時に自動分類・タグ付け",
+            "AIによる写真検索機能",
+            "報告書への自動挿入",
+            "リアルタイムでのチーム共有"
+          ]
+        },
+        {
+          "type": "blockquote",
+          "text": "写真管理のデジタル化により、月間20時間以上の作業時間削減に成功した事例があります。"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "まとめ"
+        },
+        {
+          "type": "paragraph",
+          "text": "写真管理のデジタル化は、比較的導入しやすく効果が見えやすいDX施策です。まずはここから始めてみることをお勧めします。"
+        }
+      ]
+    }
+  ]
+}

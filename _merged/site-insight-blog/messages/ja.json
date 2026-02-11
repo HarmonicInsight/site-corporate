@@ -1,0 +1,63 @@
+{
+  "common": {
+    "home": "ホーム",
+    "books": "書籍",
+    "apps": "アプリ",
+    "consulting": "コンサル",
+    "coreSystems": "基幹システム",
+    "ai": "AI活用",
+    "column": "コラム",
+    "about": "About",
+    "search": "検索",
+    "menu": "メニュー",
+    "relatedSites": "関連サイト",
+    "readMore": "続きを読む",
+    "featured": "注目",
+    "latestPosts": "最新の記事",
+    "allPosts": "すべての記事",
+    "categories": "カテゴリ",
+    "tags": "タグ",
+    "author": "著者",
+    "date": "日付",
+    "share": "シェア",
+    "backToHome": "ホームに戻る",
+    "notFound": "ページが見つかりません",
+    "searchPlaceholder": "記事を検索...",
+    "noResults": "検索結果がありません",
+    "loading": "読み込み中..."
+  },
+  "nav": {
+    "harmonicInsight": "Harmonic Insight",
+    "constructionDX": "建設DX",
+    "insightSeries": "Insight Series",
+    "appsLab": "Apps/Lab",
+    "dashboard": "Dashboard",
+    "blog": "Blog"
+  },
+  "categories": {
+    "books": "書籍紹介",
+    "apps": "アプリ紹介",
+    "core-systems": "基幹システム",
+    "consulting": "コンサルティング",
+    "research": "リサーチ",
+    "ai": "AI活用",
+    "column": "コラム"
+  },
+  "categoryDescriptions": {
+    "books": "著書やおすすめ書籍の紹介",
+    "apps": "開発したアプリの紹介",
+    "core-systems": "基幹システム導入・活用のノウハウ",
+    "consulting": "業務設計・DXコンサルティングの知見",
+    "research": "業界動向やリサーチ結果",
+    "ai": "AI・生成AIの活用方法",
+    "column": "日々の気づきや考察"
+  },
+  "about": {
+    "title": "About",
+    "authorBio": "Harmonic Insight LLC共同経営者。著書30冊以上。スマホアプリ・Windowsアプリ開発者。建設業DXコンサルタント（28年の経験、700社以上支援）。基幹システムの業務分析手法に精通。"
+  },
+  "footer": {
+    "copyright": "© {year} InsightBlog. All rights reserved.",
+    "poweredBy": "Powered by Next.js"
+  }
+}
