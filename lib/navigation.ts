@@ -1,81 +1,68 @@
 /**
- * Harmonic Insight ナビゲーション設定
+ * Harmonic Insight 公式サイト — ナビゲーション設定
+ * ドメイン: h-insight.jp
  */
 
-export type SiteId = "about" | "construction" | "decision" | "insightbi" | "series" | "blog";
-
-export interface SiteConfig {
-  id: SiteId;
-  name: string;
-  nameEn: string;
-  url: string;
-  description: string;
-  showInGlobalNav: boolean;
-  showInFooter: boolean;
-  order: number;
+export interface NavItem {
+  label: string;
+  labelEn: string;
+  href: string;
+  description?: string;
 }
 
-export const CURRENT_SITE_ID: SiteId = "about";
+export const SITE_CONFIG = {
+  name: "Harmonic Insight",
+  domain: "https://h-insight.jp",
+  email: "info@h-insight.jp",
+} as const;
 
-export const SITES: SiteConfig[] = [
+/** メインナビゲーション */
+export const NAV_ITEMS: NavItem[] = [
   {
-    id: "about",
-    name: "会社概要",
-    nameEn: "About",
-    url: "https://harmonic-insight-corporate.vercel.app/",
-    description: "Harmonic Insight 会社概要",
-    showInGlobalNav: true,
-    showInFooter: true,
-    order: 0,
+    label: "サービス",
+    labelEn: "Services",
+    href: "/services",
+    description: "業務プロセス設計・改善サービス",
   },
   {
-    id: "construction",
-    name: "建設DX",
-    nameEn: "Construction DX",
-    url: "https://const-dx-home.vercel.app/",
+    label: "製品",
+    labelEn: "Products",
+    href: "/products",
+    description: "Insightシリーズ製品一覧",
+  },
+  {
+    label: "建設DX",
+    labelEn: "Construction DX",
+    href: "/construction-dx",
     description: "建設業界のDX支援",
-    showInGlobalNav: true,
-    showInFooter: true,
-    order: 10,
   },
   {
-    id: "decision",
-    name: "AI意思決定",
-    nameEn: "AI Decision",
-    url: "https://app-win-insight-framework.vercel.app/",
-    description: "AI時代の意思決定フレームワーク",
-    showInGlobalNav: true,
-    showInFooter: true,
-    order: 11,
-  },
-  {
-    id: "insightbi",
-    name: "InsightBI",
-    nameEn: "InsightBI",
-    url: "https://insight-bi-ruby.vercel.app/",
-    description: "ビジネスインテリジェンス・データ分析",
-    showInGlobalNav: true,
-    showInFooter: true,
-    order: 20,
-  },
-  {
-    id: "series",
-    name: "Insight Series",
-    nameEn: "Insight Series",
-    url: "https://insight-series-site.vercel.app/",
-    description: "サービス・価格",
-    showInGlobalNav: true,
-    showInFooter: true,
-    order: 21,
-  },
-  {
-    id: "blog",
-    name: "Blog",
-    nameEn: "Blog",
-    url: "https://insight-blog-olive.vercel.app/",
+    label: "ブログ",
+    labelEn: "Blog",
+    href: "/blog",
     description: "技術・ビジネス情報",
-    showInGlobalNav: true,
-    showInFooter: true,
-    order: 30,
+  },
+  {
+    label: "会社概要",
+    labelEn: "Company",
+    href: "/company",
+    description: "会社情報・経営体制",
   },
 ];
+
+/** フッター用リンク */
+export const FOOTER_LINKS = {
+  company: [
+    { label: "会社概要", href: "/company" },
+    { label: "プライバシーポリシー", href: "/privacy" },
+    { label: "お問い合わせ", href: "/#contact" },
+  ],
+  services: [
+    { label: "サービス一覧", href: "/services" },
+    { label: "製品一覧", href: "/products" },
+    { label: "建設DX", href: "/construction-dx" },
+  ],
+  external: [
+    { label: "Harmonic Novels", href: "https://novels.h-insight.jp/" },
+  ],
+} as const;

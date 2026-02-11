@@ -1,0 +1,72 @@
+{
+  "$schema": "./post-schema.json",
+  "posts": [
+    {
+      "title": "記事タイトルをここに入力",
+      "slug": "unique-slug-here",
+      "category": "books",
+      "tags": ["タグ1", "タグ2", "タグ3"],
+      "date": "2025-01-03",
+      "summary": "50〜100文字の要約文をここに入力",
+      "author": "Erik",
+      "featured": false,
+      "amazon_asin": "",
+      "app_store_url": "",
+      "play_store_url": "",
+      "windows_url": "",
+      "generate_thumbnail": true,
+      "thumbnail_prompt": "",
+      "content": [
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "概要"
+        },
+        {
+          "type": "paragraph",
+          "text": "ここに導入文を書きます。"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "ポイント"
+        },
+        {
+          "type": "list",
+          "items": [
+            "ポイント1",
+            "ポイント2",
+            "ポイント3"
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "詳細"
+        },
+        {
+          "type": "paragraph",
+          "text": "本文詳細を記載します。"
+        },
+        {
+          "type": "code",
+          "language": "typescript",
+          "code": "// コード例\nconst example = 'hello';"
+        },
+        {
+          "type": "blockquote",
+          "text": "引用文をここに書きます。"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "まとめ"
+        },
+        {
+          "type": "paragraph",
+          "text": "まとめの文章をここに書きます。"
+        }
+      ]
+    }
+  ]
+}

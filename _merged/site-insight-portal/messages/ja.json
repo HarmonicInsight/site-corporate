@@ -1,0 +1,94 @@
+{
+  "common": {
+    "siteName": "Harmonic Insight Apps",
+    "apps": "Apps",
+    "news": "ニュース",
+    "about": "このサイトについて",
+    "support": "サポート",
+    "home": "ホーム",
+    "contact": "お問い合わせ",
+    "backToTop": "トップに戻る",
+    "backToList": "アプリ一覧に戻る",
+    "learnMore": "詳細を見る",
+    "viewOnGooglePlay": "Google Playで見る",
+    "viewOnAppStore": "App Storeで見る",
+    "tryOnTestFlight": "TestFlightで試す",
+    "download": "ダウンロード",
+    "github": "GitHub"
+  },
+  "home": {
+    "title": "アプリ一覧",
+    "description": "Harmonic Insightが開発する、便利で使いやすいアプリケーションをご紹介します。",
+    "searchPlaceholder": "タイトル、タグ、説明で検索…",
+    "filterAll": "すべて",
+    "filterAndroid": "Android",
+    "filterIPhone": "iPhone",
+    "filterWindows": "Windows",
+    "stageAll": "すべて",
+    "stagePublic": "公開中",
+    "stageBeta": "β",
+    "stageDev": "開発中",
+    "shuffle": "表示順をシャッフル",
+    "filterByTag": "タグで絞り込み:",
+    "showingApps": "{count}件のアプリを表示中",
+    "noResults": "該当するアプリが見つかりませんでした",
+    "noResultsHint": "検索条件を変更してお試しください"
+  },
+  "product": {
+    "screenshots": "スクリーンショット",
+    "lastUpdated": "最終更新",
+    "platforms": "対応プラットフォーム",
+    "storyTitle": "{name}に込めた思い",
+    "storyDescription": "開発の背景や、どんな方に使ってほしいかをご紹介します。",
+    "readStory": "思いを読む",
+    "backToDetail": "{name}の詳細に戻る",
+    "faqLink": "お問い合わせ・よくある質問はこちら",
+    "storyWhy": "なぜこのアプリを作ったのか",
+    "storyForWho": "誰に使ってほしいか",
+    "storyPhilosophy": "開発の哲学",
+    "storyRoadmap": "今後の展望"
+  },
+  "support": {
+    "title": "サポート",
+    "contactTitle": "お問い合わせ",
+    "contactDescription": "アプリに関するご質問、不具合の報告、機能のご要望などは、以下のメールアドレスまでお気軽にお問い合わせください。",
+    "responseTime": "通常2〜3営業日以内にご返信いたします。",
+    "faqTitle": "よくある質問（FAQ）"
+  },
+  "about": {
+    "title": "このサイトについて",
+    "portalTitle": "Harmonic Insight Apps Portal",
+    "portalDescription": "このサイトは、Harmonic Insightが開発するアプリケーションを紹介するポータルサイトです。Android、iOS、Windows向けの様々なアプリをご覧いただけます。",
+    "missionTitle": "私たちの目指すこと",
+    "missionDescription": "「テクノロジーを通じて、日々の生活やビジネスをもっと便利に、もっと楽しく」をモットーに、使いやすく価値のあるアプリケーションを開発しています。",
+    "statusTitle": "アプリのステータスについて",
+    "statusPublic": "公開中：正式版としてストアで公開されています。",
+    "statusBeta": "β版：テスト公開中です。TestFlightやベータ版としてお試しいただけます。",
+    "statusDev": "開発中：現在開発を進めています。リリースをお楽しみに！"
+  },
+  "news": {
+    "title": "ニュース",
+    "description": "アプリの最新情報とアップデート履歴をお知らせします。",
+    "noNews": "ニュースはまだありません。",
+    "detail": "詳細"
+  },
+  "legal": {
+    "privacyTitle": "プライバシーポリシー",
+    "termsTitle": "利用規約",
+    "lastUpdated": "最終更新日"
+  },
+  "notFound": {
+    "title": "ページが見つかりません",
+    "description": "お探しのページは存在しないか、移動した可能性があります。",
+    "backToApps": "アプリ一覧に戻る",
+    "contactSupport": "サポートに問い合わせる"
+  },
+  "footer": {
+    "description": "便利なアプリケーションを通じて、日々の生活やビジネスをサポートします。",
+    "links": "リンク",
+    "legal": "法的情報",
+    "privacyPolicy": "プライバシーポリシー",
+    "terms": "利用規約",
+    "copyright": "© {year} Harmonic Insight. All rights reserved."
+  }
+}

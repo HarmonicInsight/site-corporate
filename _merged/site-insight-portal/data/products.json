@@ -1,0 +1,93 @@
+{
+  "products": [
+    {
+      "name": "InsightPy",
+      "nameEn": "InsightPy",
+      "slug": "insight-py",
+      "catch": "Pythonデータ分析をもっと手軽に",
+      "catchEn": "Python Data Analysis Made Easy",
+      "description": "GUIでPythonのデータ分析を簡単に実行できるWindowsアプリ",
+      "descriptionEn": "A Windows app for easy Python data analysis with GUI",
+      "longDescription": "InsightPyは、コードを書かずにPythonのデータ分析機能を利用できるWindowsデスクトップアプリです。CSVファイルを読み込み、グラフ作成や統計分析をクリック操作だけで実行できます。",
+      "longDescriptionEn": "InsightPy is a Windows desktop app that lets you use Python's data analysis capabilities without writing code. Load CSV files and perform graph creation and statistical analysis with just clicks.",
+      "platforms": ["windows"],
+      "stage": "beta",
+      "tags": ["データ分析", "Python", "ビジネス"],
+      "tagsEn": ["Data Analysis", "Python", "Business"],
+      "updatedAt": "2024-11-20",
+      "links": {
+        "support": "mailto:support@h-insight.jp"
+      },
+      "story": {
+        "why": "プログラミングスキルがなくても、データ分析の力を活用できる環境を作りたいと考えました。",
+        "forWho": "ExcelやPythonでのデータ分析に挑戦したいビジネスパーソン向けです。",
+        "philosophy": "「難しいことを簡単に」をモットーに、専門知識がなくても使えるUIを追求しています。",
+        "roadmap": "機械学習モデルの簡易構築機能、レポート自動生成機能を開発予定です。"
+      },
+      "storyEn": {
+        "why": "We wanted to create an environment where anyone can leverage data analysis without programming skills.",
+        "forWho": "For business professionals who want to try data analysis with Excel or Python.",
+        "philosophy": "Our motto is 'Making complex things simple' - pursuing a UI usable without specialized knowledge.",
+        "roadmap": "We plan to add easy ML model building and automatic report generation features."
+      }
+    },
+    {
+      "name": "InsightSlide",
+      "nameEn": "InsightSlide",
+      "slug": "insight-slide",
+      "catch": "プレゼン資料を自動生成",
+      "catchEn": "Auto-Generate Presentation Slides",
+      "description": "テキストから美しいスライドを自動で作成するアプリ",
+      "descriptionEn": "An app that automatically creates beautiful slides from text",
+      "longDescription": "InsightSlideは、箇条書きのテキストを入力するだけで、プロフェッショナルなプレゼンテーションスライドを自動生成します。デザインに時間をかけず、コンテンツに集中できます。",
+      "longDescriptionEn": "InsightSlide automatically generates professional presentation slides just by entering bullet-point text. Focus on content, not design.",
+      "platforms": ["windows"],
+      "stage": "dev",
+      "tags": ["生産性", "プレゼン", "自動化"],
+      "tagsEn": ["Productivity", "Presentation", "Automation"],
+      "updatedAt": "2024-10-05",
+      "links": {
+        "support": "mailto:support@h-insight.jp"
+      },
+      "story": {
+        "why": "プレゼン資料のデザインに悩む時間を、もっと価値のある活動に使ってほしいと思いました。",
+        "forWho": "頻繁にプレゼンを行うビジネスパーソン、学生の方向けです。",
+        "philosophy": "美しいデザインを誰でも手軽に。AIの力でクリエイティブな作業を民主化します。"
+      },
+      "storyEn": {
+        "why": "We wanted people to spend time on valuable activities instead of struggling with slide design.",
+        "forWho": "For business professionals and students who frequently give presentations.",
+        "philosophy": "Beautiful design for everyone, easily. Democratizing creative work with the power of AI."
+      }
+    },
+    {
+      "name": "ForguncyInsight",
+      "nameEn": "ForguncyInsight",
+      "slug": "forguncy-insight",
+      "catch": "Forguncyの可能性を広げる",
+      "catchEn": "Expand Forguncy's Potential",
+      "description": "Forguncy向けの拡張プラグインとユーティリティ集",
+      "descriptionEn": "Extension plugins and utilities for Forguncy",
+      "longDescription": "ForguncyInsightは、GrapeCity社のノーコード開発ツールForguncy向けの拡張機能パックです。カスタムコマンド、データ可視化コンポーネント、連携ユーティリティを提供し、Forguncyでの開発をさらに強力にします。",
+      "longDescriptionEn": "ForguncyInsight is an extension pack for GrapeCity's no-code development tool Forguncy. It provides custom commands, data visualization components, and integration utilities to make Forguncy development even more powerful.",
+      "platforms": ["windows"],
+      "stage": "dev",
+      "tags": ["ノーコード", "開発ツール", "Forguncy"],
+      "tagsEn": ["No-Code", "Dev Tools", "Forguncy"],
+      "updatedAt": "2024-08-15",
+      "links": {
+        "support": "mailto:support@h-insight.jp"
+      },
+      "story": {
+        "why": "Forguncyユーザーとして、標準機能だけでは実現しにくい要件を解決するツールが欲しかったからです。",
+        "forWho": "Forguncyを使ってシステム開発を行う開発者、企業のIT担当者向けです。",
+        "philosophy": "ノーコード開発の「かゆいところに手が届く」拡張機能を提供します。"
+      },
+      "storyEn": {
+        "why": "As a Forguncy user, we wanted tools to solve requirements difficult to achieve with standard features alone.",
+        "forWho": "For developers building systems with Forguncy and corporate IT personnel.",
+        "philosophy": "Providing extensions that 'scratch the itch' in no-code development."
+      }
+    }
+  ]
+}

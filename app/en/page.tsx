@@ -1,7 +1,5 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Harmonic Insight | Design operations that anyone can run",
@@ -38,11 +36,9 @@ export default function HomeEN() {
   ];
 
   return (
-    <>
-      <Header />
       <main>
         {/* Hero */}
-        <section className="relative px-4 sm:px-6 overflow-hidden pt-28 pb-10 sm:pt-32 sm:pb-14 md:pt-36 md:pb-20">
+        <section className="relative px-4 sm:px-6 overflow-hidden pt-4 pb-10 sm:pt-4 sm:pb-14 md:pt-4 md:pb-20">
           <div className="absolute inset-0 bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-gray-950" />
           <div className="relative z-10 text-center max-w-3xl mx-auto">
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6 leading-tight">
@@ -163,7 +159,5 @@ export default function HomeEN() {
           </div>
         </section>
       </main>
-      <Footer />
-    </>
   );
 }

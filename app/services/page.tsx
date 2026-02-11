@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "サービス一覧 | Harmonic Insight",
@@ -46,43 +45,9 @@ export default function ServicesPage() {
 
   return (
     <>
-      {/* Header */}
-      <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 dark:bg-gray-950/95 backdrop-blur-md shadow-sm">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6">
-          <div className="flex items-center justify-between h-16 sm:h-20">
-            <Link
-              href="/"
-              className="text-lg sm:text-xl font-semibold text-gray-900 dark:text-white tracking-tight"
-            >
-              Harmonic Insight
-            </Link>
-            <nav className="flex items-center space-x-6">
-              <Link
-                href="/"
-                className="text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors duration-200 text-sm"
-              >
-                Home
-              </Link>
-              <Link
-                href="/company"
-                className="text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors duration-200 text-sm"
-              >
-                Company
-              </Link>
-              <Link
-                href="/#contact"
-                className="px-4 py-2 bg-primary-600 hover:bg-primary-700 text-white text-sm font-medium rounded-lg transition-colors duration-200"
-              >
-                お問い合わせ
-              </Link>
-            </nav>
-          </div>
-        </div>
-      </header>
-
       <main className="min-h-screen bg-white dark:bg-gray-950">
         {/* Breadcrumb */}
-        <div className="pt-20 sm:pt-24 px-4 sm:px-6">
+        <div className="pt-4 px-4 sm:px-6">
           <div className="max-w-5xl mx-auto">
             <nav className="text-sm text-gray-500 dark:text-gray-400 py-4">
               <Link href="/" className="hover:text-primary-600 dark:hover:text-primary-400">
@@ -186,7 +151,6 @@ export default function ServicesPage() {
           </div>
         </section>
       </main>
-      <Footer />
     </>
   );
 }

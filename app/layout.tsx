@@ -4,31 +4,32 @@ import { GlobalNav } from "@/components/GlobalNav";
 import { SiteFooter } from "@/components/SiteFooter";
 
 export const metadata: Metadata = {
-  title: "Harmonic Insight LLC | 思考と創造を、形にする",
+  title: "Harmonic Insight LLC | 業務を、誰でも回る形に",
   description:
-    "ハーモニックインサイト合同会社 - AIと人間の共創による小説・書籍シリーズ、プロフェッショナル向け生産性ツール、ライフスタイルアプリを提供。",
+    "ハーモニックインサイト合同会社 — 業務を部品として定義し、組み立てて、誰でも回る形にする。建設業DX支援・業務プロセス設計・ソフトウェア開発。",
   keywords: [
     "Harmonic Insight",
     "ハーモニックインサイト",
-    "AI小説",
-    "生産性ツール",
-    "ライフスタイルアプリ",
+    "建設DX",
+    "業務設計",
+    "業務改善",
+    "Insightシリーズ",
   ],
   authors: [{ name: "Harmonic Insight LLC" }],
   openGraph: {
-    title: "Harmonic Insight LLC | 思考と創造を、形にする",
+    title: "Harmonic Insight LLC | 業務を、誰でも回る形に",
     description:
-      "AIと人間の共創による小説・書籍シリーズ、プロフェッショナル向け生産性ツール、ライフスタイルアプリを提供。",
-    url: "https://harmonic-insight.jp",
+      "業務を部品として定義し、組み立てて、誰でも回る形にする。建設業DX支援・業務プロセス設計・ソフトウェア開発。",
+    url: "https://h-insight.jp",
     siteName: "Harmonic Insight",
     locale: "ja_JP",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Harmonic Insight LLC | 思考と創造を、形にする",
+    title: "Harmonic Insight LLC | 業務を、誰でも回る形に",
     description:
-      "AIと人間の共創による小説・書籍シリーズ、プロフェッショナル向け生産性ツール、ライフスタイルアプリを提供。",
+      "業務を部品として定義し、組み立てて、誰でも回る形にする。建設業DX支援・業務プロセス設計・ソフトウェア開発。",
   },
   robots: {
     index: true,
@@ -45,7 +46,7 @@ export default function RootLayout({
     <html lang="ja" className="scroll-smooth">
       <body className="bg-white text-gray-900 dark:bg-gray-950 dark:text-gray-100 transition-colors duration-300">
         <GlobalNav />
-        <div className="pt-10">
+        <div className="pt-14">
           {children}
         </div>
         <SiteFooter />

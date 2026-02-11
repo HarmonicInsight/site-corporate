@@ -1,0 +1,9 @@
+{
+  "title": "記事タイトル",
+  "slug": "article-slug",
+  "category": "research",
+  "tags": ["タグ1", "タグ2", "タグ3"],
+  "author": "Erik",
+  "featured": false,
+  "notes": "記事作成時の補足メモ（任意）"
+}

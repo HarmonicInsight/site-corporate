@@ -1,0 +1,94 @@
+{
+  "common": {
+    "siteName": "Harmonic Insight Apps",
+    "apps": "Apps",
+    "news": "News",
+    "about": "About",
+    "support": "Support",
+    "home": "Home",
+    "contact": "Contact",
+    "backToTop": "Back to top",
+    "backToList": "Back to app list",
+    "learnMore": "Learn More",
+    "viewOnGooglePlay": "View on Google Play",
+    "viewOnAppStore": "View on App Store",
+    "tryOnTestFlight": "Try on TestFlight",
+    "download": "Download",
+    "github": "GitHub"
+  },
+  "home": {
+    "title": "App List",
+    "description": "Discover useful and user-friendly applications developed by Harmonic Insight.",
+    "searchPlaceholder": "Search by title, tags, or description...",
+    "filterAll": "All",
+    "filterAndroid": "Android",
+    "filterIPhone": "iPhone",
+    "filterWindows": "Windows",
+    "stageAll": "All",
+    "stagePublic": "Released",
+    "stageBeta": "Beta",
+    "stageDev": "In Dev",
+    "shuffle": "Shuffle",
+    "filterByTag": "Filter by tag:",
+    "showingApps": "Showing {count} apps",
+    "noResults": "No apps found",
+    "noResultsHint": "Try adjusting your search criteria"
+  },
+  "product": {
+    "screenshots": "Screenshots",
+    "lastUpdated": "Last Updated",
+    "platforms": "Platforms",
+    "storyTitle": "The Story Behind {name}",
+    "storyDescription": "Learn about the background of development and who this app is made for.",
+    "readStory": "Read the Story",
+    "backToDetail": "Back to {name}",
+    "faqLink": "Questions? Visit our FAQ",
+    "storyWhy": "Why We Built This",
+    "storyForWho": "Who It's For",
+    "storyPhilosophy": "Our Philosophy",
+    "storyRoadmap": "Future Plans"
+  },
+  "support": {
+    "title": "Support",
+    "contactTitle": "Contact Us",
+    "contactDescription": "For questions about our apps, bug reports, or feature requests, please feel free to contact us at the email address below.",
+    "responseTime": "We typically respond within 2-3 business days.",
+    "faqTitle": "Frequently Asked Questions"
+  },
+  "about": {
+    "title": "About This Site",
+    "portalTitle": "Harmonic Insight Apps Portal",
+    "portalDescription": "This site is a portal introducing applications developed by Harmonic Insight. Browse our various apps for Android, iOS, and Windows.",
+    "missionTitle": "Our Mission",
+    "missionDescription": "Our motto is \"Making daily life and business more convenient and enjoyable through technology.\" We develop user-friendly and valuable applications.",
+    "statusTitle": "App Status Guide",
+    "statusPublic": "Released: Officially published on app stores.",
+    "statusBeta": "Beta: Available for testing via TestFlight or beta channels.",
+    "statusDev": "In Development: Currently under development. Stay tuned!"
+  },
+  "news": {
+    "title": "News",
+    "description": "Latest updates and release history for our apps.",
+    "noNews": "No news yet.",
+    "detail": "Details"
+  },
+  "legal": {
+    "privacyTitle": "Privacy Policy",
+    "termsTitle": "Terms of Service",
+    "lastUpdated": "Last Updated"
+  },
+  "notFound": {
+    "title": "Page Not Found",
+    "description": "The page you're looking for doesn't exist or may have been moved.",
+    "backToApps": "Back to App List",
+    "contactSupport": "Contact Support"
+  },
+  "footer": {
+    "description": "Supporting your daily life and business through useful applications.",
+    "links": "Links",
+    "legal": "Legal",
+    "privacyPolicy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "copyright": "© {year} Harmonic Insight. All rights reserved."
+  }
+}

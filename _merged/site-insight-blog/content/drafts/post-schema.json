@@ -1,0 +1,166 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "InsightBlog Posts Schema",
+  "description": "Schema for blog post definitions",
+  "type": "object",
+  "required": ["posts"],
+  "properties": {
+    "posts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["title", "slug", "category", "tags", "date", "summary", "author", "content"],
+        "properties": {
+          "title": {
+            "type": "string",
+            "description": "記事タイトル"
+          },
+          "slug": {
+            "type": "string",
+            "pattern": "^[a-z0-9-]+$",
+            "description": "URLスラッグ（英小文字、数字、ハイフンのみ）"
+          },
+          "category": {
+            "type": "string",
+            "enum": ["books", "apps", "core-systems", "consulting", "research", "ai", "column"],
+            "description": "カテゴリ"
+          },
+          "tags": {
+            "type": "array",
+            "items": { "type": "string" },
+            "minItems": 1,
+            "description": "タグ一覧"
+          },
+          "date": {
+            "type": "string",
+            "format": "date",
+            "description": "公開日（YYYY-MM-DD形式）"
+          },
+          "summary": {
+            "type": "string",
+            "minLength": 30,
+            "maxLength": 200,
+            "description": "要約文（50〜100文字推奨）"
+          },
+          "author": {
+            "type": "string",
+            "default": "Erik",
+            "description": "著者名"
+          },
+          "featured": {
+            "type": "boolean",
+            "default": false,
+            "description": "注目記事フラグ"
+          },
+          "draft": {
+            "type": "boolean",
+            "default": true,
+            "description": "下書きフラグ（trueの場合、本番では非表示）"
+          },
+          "amazon_asin": {
+            "type": "string",
+            "description": "Amazon ASIN（書籍用）"
+          },
+          "app_store_url": {
+            "type": "string",
+            "format": "uri",
+            "description": "App Store URL"
+          },
+          "play_store_url": {
+            "type": "string",
+            "format": "uri",
+            "description": "Google Play URL"
+          },
+          "windows_url": {
+            "type": "string",
+            "format": "uri",
+            "description": "Windows Store URL"
+          },
+          "thumbnail": {
+            "type": "string",
+            "description": "サムネイル画像パス（指定しない場合は自動生成）"
+          },
+          "generate_thumbnail": {
+            "type": "boolean",
+            "default": true,
+            "description": "サムネイルを自動生成するか"
+          },
+          "thumbnail_prompt": {
+            "type": "string",
+            "description": "サムネイル生成用のカスタムプロンプト（空の場合は自動生成）"
+          },
+          "content": {
+            "type": "array",
+            "description": "記事コンテンツブロック",
+            "items": {
+              "oneOf": [
+                {
+                  "type": "object",
+                  "required": ["type", "text"],
+                  "properties": {
+                    "type": { "const": "paragraph" },
+                    "text": { "type": "string" }
+                  }
+                },
+                {
+                  "type": "object",
+                  "required": ["type", "level", "text"],
+                  "properties": {
+                    "type": { "const": "heading" },
+                    "level": { "type": "integer", "minimum": 2, "maximum": 4 },
+                    "text": { "type": "string" }
+                  }
+                },
+                {
+                  "type": "object",
+                  "required": ["type", "items"],
+                  "properties": {
+                    "type": { "const": "list" },
+                    "ordered": { "type": "boolean", "default": false },
+                    "items": { "type": "array", "items": { "type": "string" } }
+                  }
+                },
+                {
+                  "type": "object",
+                  "required": ["type", "code"],
+                  "properties": {
+                    "type": { "const": "code" },
+                    "language": { "type": "string" },
+                    "code": { "type": "string" }
+                  }
+                },
+                {
+                  "type": "object",
+                  "required": ["type", "text"],
+                  "properties": {
+                    "type": { "const": "blockquote" },
+                    "text": { "type": "string" }
+                  }
+                },
+                {
+                  "type": "object",
+                  "required": ["type", "url", "alt"],
+                  "properties": {
+                    "type": { "const": "image" },
+                    "url": { "type": "string" },
+                    "alt": { "type": "string" },
+                    "caption": { "type": "string" }
+                  }
+                },
+                {
+                  "type": "object",
+                  "required": ["type", "asin"],
+                  "properties": {
+                    "type": { "const": "amazon" },
+                    "asin": { "type": "string" },
+                    "title": { "type": "string" }
+                  }
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

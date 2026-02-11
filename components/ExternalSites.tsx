@@ -1,8 +1,9 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import Link from "next/link";
 
-export default function ExternalSites() {
+export default function ServiceOverview() {
   const sectionRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
@@ -26,31 +27,32 @@ export default function ExternalSites() {
     return () => observer.disconnect();
   }, []);
 
-  const sites = [
+  const sections = [
     {
-      title: "建設DX・業務設計",
-      description: "業務を部品として定義し、組み立てて回る形に。",
-      url: "https://const-dx-home.vercel.app/",
+      title: "サービス",
+      description: "月次チェック自動化、入力品質設計、報告帳票改善、業務ヒアリング。",
+      href: "/services",
     },
     {
-      title: "Insight Series",
-      description: "属人化をほどくための、設計・変換・説明の基盤。",
-      url: "https://insight-series-site.vercel.app/",
+      title: "製品 — Insight Series",
+      description: "InsightBI・InsightPy・InsightSlides 等、属人化をほどくツール群。",
+      href: "/products",
     },
     {
-      title: "InsightBI",
-      description: "BIダッシュボード構築サービス。",
-      url: "https://insight-bi-ruby.vercel.app/",
+      title: "建設DXの窓口",
+      description: "業務を部品化し、誰でも回る仕組みに。診断・教育・コンサルティング。",
+      href: "/construction-dx",
     },
     {
-      title: "Apps Portal",
-      description: "アプリ・ツールの一覧とデモ入口。",
-      url: "https://h-insight-apps-portal.vercel.app/",
+      title: "ブログ",
+      description: "業務設計・建設DX・AI活用に関する知見を発信。",
+      href: "/blog",
     },
     {
       title: "Harmonic Novels",
       description: "未来の仕事と社会を、物語で描く。",
-      url: "https://novels.h-insight.jp/",
+      href: "https://novels.h-insight.jp/",
+      external: true,
     },
   ];
 
@@ -62,47 +64,79 @@ export default function ExternalSites() {
       <div className="max-w-4xl mx-auto">
         <div className="fade-in-section text-center mb-10">
           <h2 className="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white mb-2">
-            領域別の専用サイト
+            事業領域
           </h2>
           <p className="text-sm text-gray-600 dark:text-gray-400">
-            事業領域ごとの詳細・ツール・コンテンツはこちら
+            サービス・製品・コンテンツの詳細はこちら
           </p>
         </div>
 
         <div className="grid sm:grid-cols-2 gap-4">
-          {sites.map((site, index) => (
-            <a
-              key={index}
-              href={site.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="fade-in-section block bg-white dark:bg-gray-900 rounded-xl p-5 border border-gray-200 dark:border-gray-700 hover:border-primary-400 dark:hover:border-primary-500 transition-colors group"
-            >
-              <div className="flex items-start justify-between">
-                <div>
-                  <h3 className="text-base font-semibold text-gray-900 dark:text-white mb-1 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">
-                    {site.title}
-                  </h3>
-                  <p className="text-sm text-gray-600 dark:text-gray-400">
-                    {site.description}
-                  </p>
+          {sections.map((item, index) =>
+            item.external ? (
+              <a
+                key={index}
+                href={item.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="fade-in-section block bg-white dark:bg-gray-900 rounded-xl p-5 border border-gray-200 dark:border-gray-700 hover:border-primary-400 dark:hover:border-primary-500 transition-colors group"
+              >
+                <div className="flex items-start justify-between">
+                  <div>
+                    <h3 className="text-base font-semibold text-gray-900 dark:text-white mb-1 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">
+                      {item.title}
+                    </h3>
+                    <p className="text-sm text-gray-600 dark:text-gray-400">
+                      {item.description}
+                    </p>
+                  </div>
+                  <svg
+                    className="w-4 h-4 text-gray-400 group-hover:text-primary-500 transition-colors flex-shrink-0 mt-1"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                    />
+                  </svg>
                 </div>
-                <svg
-                  className="w-4 h-4 text-gray-400 group-hover:text-primary-500 transition-colors flex-shrink-0 mt-1"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-                  />
-                </svg>
-              </div>
-            </a>
-          ))}
+              </a>
+            ) : (
+              <Link
+                key={index}
+                href={item.href}
+                className="fade-in-section block bg-white dark:bg-gray-900 rounded-xl p-5 border border-gray-200 dark:border-gray-700 hover:border-primary-400 dark:hover:border-primary-500 transition-colors group"
+              >
+                <div className="flex items-start justify-between">
+                  <div>
+                    <h3 className="text-base font-semibold text-gray-900 dark:text-white mb-1 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">
+                      {item.title}
+                    </h3>
+                    <p className="text-sm text-gray-600 dark:text-gray-400">
+                      {item.description}
+                    </p>
+                  </div>
+                  <svg
+                    className="w-4 h-4 text-gray-400 group-hover:text-primary-500 transition-colors flex-shrink-0 mt-1"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M9 5l7 7-7 7"
+                    />
+                  </svg>
+                </div>
+              </Link>
+            )
+          )}
         </div>
       </div>
     </section>
