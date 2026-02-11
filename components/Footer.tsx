@@ -67,7 +67,7 @@ export default function Footer() {
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
           <div className="text-center sm:text-left">
             <p className="text-sm text-gray-400">
-              &copy; 2025 Harmonic Insight LLC
+              &copy; 2025 HARMONIC insight LLC
             </p>
             <p className="text-xs text-gray-500 mt-1">
               Strategy &amp; Architecture by Erik Arthur

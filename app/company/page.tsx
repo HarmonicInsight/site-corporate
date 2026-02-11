@@ -2,7 +2,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "会社概要 | Harmonic Insight LLC",
+  title: "会社概要 | HARMONIC insight LLC",
   description: "業務を部品として定義し、組み立てて、誰でも回る形にする。建設業DX支援、ソフトウェア開発、コンテンツ制作を行っています。",
 };
 
@@ -44,7 +44,7 @@ export default function CompanyPage() {
     {
       title: "Novels",
       description: "AI×未来×日本を描く小説群。創作プロセスも仕組み化して多言語展開。",
-      href: "https://novels.h-insight.jp/",
+      href: "https://www.insight-novels.com/",
       color: "amber",
       external: true,
       icon: (
@@ -135,7 +135,7 @@ export default function CompanyPage() {
           </h2>
           <div className="space-y-8 text-gray-700 dark:text-gray-300 leading-relaxed">
             <div className="space-y-4">
-              <p>Harmonic Insightは「仕組み化」の専門家によって設立されました。</p>
+              <p>HARMONIC insightは「仕組み化」の専門家によって設立されました。</p>
               <p className="text-gray-600 dark:text-gray-400">
                 業務を部品として設計し、誰でも回る形にする——<br />
                 この考え方を、建設業DX・業務ツール開発・コンテンツ制作に適用しています。
@@ -225,7 +225,7 @@ export default function CompanyPage() {
           </h2>
           <div className="space-y-4">
             {[
-              ["会社名", "ハーモニックインサイト合同会社（Harmonic Insight LLC）"],
+              ["会社名", "ハーモニックインサイト合同会社（HARMONIC insight LLC）"],
               ["設立", "2025年8月"],
               ["代表", "瀬田 ルリ子"],
               ["所在地", "東京都"],
@@ -264,7 +264,7 @@ export default function CompanyPage() {
               </div>
               <div className="flex-grow">
                 <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
-                  業務を部品として設計し、組み立てて回る設計思想の構築、Insight Seriesのプロダクト設計、Harmonic Insightにおける全体アーキテクチャ戦略を担当しています。
+                  業務を部品として設計し、組み立てて回る設計思想の構築、Insight Seriesのプロダクト設計、HARMONIC insightにおける全体アーキテクチャ戦略を担当しています。
                 </p>
               </div>
             </div>

@@ -2,8 +2,8 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Company | Harmonic Insight LLC",
-  description: "Harmonic Insight LLC company overview. We design business operations as modular components that anyone can run.",
+  title: "Company | HARMONIC insight LLC",
+  description: "HARMONIC insight LLC company overview. We design business operations as modular components that anyone can run.",
 };
 
 export default function CompanyPageEN() {
@@ -55,7 +55,7 @@ export default function CompanyPageEN() {
     {
       title: "Novels",
       description: "Multilingual fiction exploring AI and the future of work. (Japanese)",
-      href: "https://novels.h-insight.jp/",
+      href: "https://www.insight-novels.com/",
       color: "amber",
       icon: (
         <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -66,7 +66,7 @@ export default function CompanyPageEN() {
   ];
 
   const history = [
-    { date: "August 2025", event: "Harmonic Insight LLC established" },
+    { date: "August 2025", event: "HARMONIC insight LLC established" },
     { date: "August 2025", event: "Harmonic Novels platform launched" },
     { date: "2025", event: "Construction DX consulting services started" },
     { date: "2025", event: "Insight Series and Apps Portal launched" },
@@ -144,7 +144,7 @@ export default function CompanyPageEN() {
             <div className="space-y-8 text-gray-700 dark:text-gray-300 leading-relaxed">
               <div className="space-y-4">
                 <p>
-                  Harmonic Insight was founded by specialists in structured business design.
+                  HARMONIC insight was founded by specialists in structured business design.
                 </p>
                 <p className="text-gray-600 dark:text-gray-400">
                   We break down operations into modular components, assemble them into workflows, and create systems that run reliably without depending on specific individuals.
@@ -213,7 +213,7 @@ export default function CompanyPageEN() {
                   Company Name
                 </div>
                 <div className="text-gray-900 dark:text-white text-sm">
-                  Harmonic Insight LLC
+                  HARMONIC insight LLC
                 </div>
               </div>
               <div className="flex flex-col sm:flex-row gap-2 sm:gap-4">
@@ -279,7 +279,7 @@ export default function CompanyPageEN() {
                 </div>
                 <div className="flex-grow">
                   <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
-                    As the representative of Harmonic Insight LLC, she oversees company operations and business development.
+                    As the representative of HARMONIC insight LLC, she oversees company operations and business development.
                   </p>
                 </div>
               </div>
@@ -296,7 +296,7 @@ export default function CompanyPageEN() {
                 </div>
                 <div className="flex-grow">
                   <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
-                    Responsible for the design philosophy of modular business operations, Insight Series product architecture, and overall strategic direction of Harmonic Insight.
+                    Responsible for the design philosophy of modular business operations, Insight Series product architecture, and overall strategic direction of HARMONIC insight.
                   </p>
                 </div>
               </div>

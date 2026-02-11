@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "建設DXの窓口 | Harmonic Insight",
+  title: "建設DXの窓口 | HARMONIC insight",
   description: "ツールの前に、判断を整える。業務を部品として定義し、組み立てて回る形にする建設業向けDX支援。業務ドック・DX診断・教育プログラム。",
 };
 

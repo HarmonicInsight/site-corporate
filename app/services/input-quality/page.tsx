@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "月次・原価の入力品質設計 | Harmonic Insight",
+  title: "月次・原価の入力品質設計 | HARMONIC insight",
   description: "入力ルールの整理、チェックロジックの設計、差し戻しフローの構築まで。基幹システムを変えずに入力品質を上げます。",
 };
 

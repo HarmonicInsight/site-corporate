@@ -1,5 +1,5 @@
 /**
- * Harmonic Insight 公式サイト — ナビゲーション設定
+ * HARMONIC insight 公式サイト — ナビゲーション設定
  * ドメイン: h-insight.jp
  */
 
@@ -11,7 +11,7 @@ export interface NavItem {
 }
 
 export const SITE_CONFIG = {
-  name: "Harmonic Insight",
+  name: "HARMONIC insight",
   domain: "https://h-insight.jp",
   email: "info@h-insight.jp",
 } as const;

@@ -57,7 +57,7 @@ export default function Header() {
           <div className="flex items-center justify-between h-10">
             {/* Left: Group Sites */}
             <nav className="flex items-center overflow-x-auto">
-              <span className="font-medium whitespace-nowrap">Harmonic Insight</span>
+              <span className="font-medium whitespace-nowrap">HARMONIC insight</span>
               <span className="text-gray-600 mx-2 hidden sm:inline">|</span>
 
               {groupSites.map((site, index) => (
@@ -121,7 +121,7 @@ export default function Header() {
               href={homeHref}
               className="text-lg font-mincho font-medium text-gray-900 dark:text-white"
             >
-              Harmonic Insight
+              HARMONIC insight
             </Link>
 
             {/* Desktop Navigation */}

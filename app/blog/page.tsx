@@ -3,8 +3,8 @@ import Link from "next/link";
 import { blogPosts } from "@/data/blog-posts";
 
 export const metadata: Metadata = {
-  title: "ブログ | Harmonic Insight",
-  description: "Harmonic Insight のブログ。業務設計・建設DX・AI活用に関する知見を発信しています。",
+  title: "ブログ | HARMONIC insight",
+  description: "HARMONIC insight のブログ。業務設計・建設DX・AI活用に関する知見を発信しています。",
 };
 
 const categoryColors: Record<string, string> = {
