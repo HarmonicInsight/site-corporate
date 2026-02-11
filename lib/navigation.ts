@@ -63,6 +63,8 @@ export const FOOTER_LINKS = {
     { label: "建設DX", href: "/construction-dx" },
   ],
   external: [
-    { label: "Harmonic Novels", href: "https://novels.h-insight.jp/" },
+    { label: "Insight Office", href: "https://www.insight-office.com/ja" },
+    { label: "Insight Novels", href: "https://www.insight-novels.com/" },
+    { label: "瀬田博之（コンサルタント紹介）", href: "https://erikhiroyuki.com/" },
   ],
 } as const;

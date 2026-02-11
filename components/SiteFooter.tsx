@@ -9,7 +9,7 @@ export function SiteFooter() {
       {/* Links */}
       <div className="border-b border-gray-800">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 py-10">
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             <div>
               <p className="text-xs text-gray-500 mb-3 tracking-wider uppercase">Company</p>
               <nav className="space-y-2">
@@ -39,7 +39,7 @@ export function SiteFooter() {
               </nav>
             </div>
             <div>
-              <p className="text-xs text-gray-500 mb-3 tracking-wider uppercase">Related</p>
+              <p className="text-xs text-gray-500 mb-3 tracking-wider uppercase">Related Sites</p>
               <nav className="space-y-2">
                 {FOOTER_LINKS.external.map((link) => (
                   <a
@@ -52,6 +52,20 @@ export function SiteFooter() {
                     {link.label}
                   </a>
                 ))}
+              </nav>
+            </div>
+            <div>
+              <p className="text-xs text-gray-500 mb-3 tracking-wider uppercase">Legal</p>
+              <nav className="space-y-2">
+                <Link href="/privacy" className="block text-sm text-gray-400 hover:text-white transition-colors">
+                  プライバシーポリシー
+                </Link>
+                <Link href="/terms" className="block text-sm text-gray-400 hover:text-white transition-colors">
+                  利用規約
+                </Link>
+                <Link href="/legal" className="block text-sm text-gray-400 hover:text-white transition-colors">
+                  特定商取引法に基づく表記
+                </Link>
               </nav>
             </div>
           </div>
