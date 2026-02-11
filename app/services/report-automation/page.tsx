@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "現場の報告・帳票改善 | Harmonic Insight",
+  title: "現場の報告・帳票改善 | HARMONIC insight",
   description: "報告フォーマットの統一、入力導線の簡素化、自動集計の仕組みを作ります。現場の手間を減らしながら、必要な情報が集まる状態に。",
 };
 

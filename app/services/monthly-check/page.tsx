@@ -10,7 +10,7 @@ import FAQ from "@/components/FAQ";
 import Contact from "@/components/Contact";
 
 export const metadata: Metadata = {
-  title: "月次実績チェック自動化パック | Harmonic Insight",
+  title: "月次実績チェック自動化パック | HARMONIC insight",
   description: "月次の「手作業チェック」を仕組みで終わらせます。入力ミスを月末まで放置しない、チェック自動化サービス。6〜8週間で導入可能。",
 };
 

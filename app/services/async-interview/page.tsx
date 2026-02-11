@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "会議しない業務ヒアリング | Harmonic Insight",
+  title: "会議しない業務ヒアリング | HARMONIC insight",
   description: "動画・テキスト回答・非同期レビューで業務整理を進めます。忙しい現場に負担をかけず、必要な情報を集めます。",
 };
 

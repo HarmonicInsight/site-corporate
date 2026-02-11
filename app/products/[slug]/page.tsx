@@ -11,7 +11,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const product = getProductBySlug(slug);
   if (!product) return { title: "製品が見つかりません" };
   return {
-    title: `${product.name} — ${product.tagline} | Harmonic Insight`,
+    title: `${product.name} — ${product.tagline} | HARMONIC insight`,
     description: product.description,
   };
 }

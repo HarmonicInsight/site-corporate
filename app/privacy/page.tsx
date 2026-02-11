@@ -3,8 +3,8 @@ import Link from "next/link";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "プライバシーポリシー | Harmonic Insight",
-  description: "Harmonic Insight のプライバシーポリシー",
+  title: "プライバシーポリシー | HARMONIC insight",
+  description: "HARMONIC insight のプライバシーポリシー",
 };
 
 export default function PrivacyPage() {
@@ -17,7 +17,7 @@ export default function PrivacyPage() {
             href="/"
             className="text-xl font-semibold text-gray-900 dark:text-white tracking-tight hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
           >
-            Harmonic Insight
+            HARMONIC insight
           </Link>
         </div>
       </header>
@@ -30,7 +30,7 @@ export default function PrivacyPage() {
 
           <div className="prose prose-gray dark:prose-invert max-w-none">
             <p className="text-gray-600 dark:text-gray-400 mb-8">
-              Harmonic Insight LLC（以下「当社」）は、お客様の個人情報の保護を重要な責務と認識し、以下のとおりプライバシーポリシーを定めます。
+              HARMONIC insight LLC（以下「当社」）は、お客様の個人情報の保護を重要な責務と認識し、以下のとおりプライバシーポリシーを定めます。
             </p>
 
             <section className="mb-8">

@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "サービス一覧 | Harmonic Insight",
-  description: "Harmonic Insight が提供する業務プロセス設計・改善サービスの一覧。月次チェック自動化、入力品質設計、帳票改善、業務ヒアリングなど。",
+  title: "サービス一覧 | HARMONIC insight",
+  description: "HARMONIC insight が提供する業務プロセス設計・改善サービスの一覧。月次チェック自動化、入力品質設計、帳票改善、業務ヒアリングなど。",
 };
 
 export default function ServicesPage() {

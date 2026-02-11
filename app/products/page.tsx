@@ -3,8 +3,8 @@ import Link from "next/link";
 import { products } from "@/data/products";
 
 export const metadata: Metadata = {
-  title: "製品一覧 — Insight Series | Harmonic Insight",
-  description: "Harmonic Insight が提供するInsight Series製品一覧。InsightBI・Forguncy Insight・InsightSlides・InsightPy・Interview Insight。",
+  title: "製品一覧 — Insight Series | HARMONIC insight",
+  description: "HARMONIC insight が提供するInsight Series製品一覧。InsightBI・Forguncy Insight・InsightSlides・InsightPy・Interview Insight。",
 };
 
 const colorMap: Record<string, { bg: string; text: string; border: string }> = {

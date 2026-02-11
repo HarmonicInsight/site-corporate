@@ -51,7 +51,7 @@ export default function ServiceOverview() {
     {
       title: "Harmonic Novels",
       description: "未来の仕事と社会を、物語で描く。",
-      href: "https://novels.h-insight.jp/",
+      href: "https://www.insight-novels.com/",
       external: true,
     },
   ];

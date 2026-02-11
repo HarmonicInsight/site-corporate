@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Harmonic Insight | Design operations that anyone can run",
+  title: "HARMONIC insight | Design operations that anyone can run",
   description: "We design business operations as modular components. Break down, assemble, and run with structure—not reliance on individuals.",
 };
 
@@ -31,7 +31,7 @@ export default function HomeEN() {
     {
       title: "Harmonic Novels",
       description: "Fiction exploring AI and the future. (Japanese)",
-      url: "https://novels.h-insight.jp/",
+      url: "https://www.insight-novels.com/",
     },
   ];
 
