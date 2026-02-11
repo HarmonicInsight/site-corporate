@@ -1,6 +1,4 @@
 import type { Metadata } from "next";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 import CorporateHero from "@/components/CorporateHero";
 import Principles from "@/components/Principles";
 import ExternalSites from "@/components/ExternalSites";
@@ -13,15 +11,11 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <>
-      <Header />
-      <main>
-        <CorporateHero />
-        <Principles />
-        <ExternalSites />
-        <CorporateContact />
-      </main>
-      <Footer />
-    </>
+    <main>
+      <CorporateHero />
+      <Principles />
+      <ExternalSites />
+      <CorporateContact />
+    </main>
   );
 }
